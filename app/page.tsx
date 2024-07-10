@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const completionWord = "안녕하세요.1머머하는 개발자1황서연입니다.";
+  const completionWord = "안녕하세요1머머하는 개발자1황서연입니다";
   const [display, setDisplay] = useState(""); // display 되는 텍스트
   const [count, setCount] = useState(0); // 현재 타이핑의 카운트
   const [end, setEnd] = useState(false);
@@ -37,7 +37,7 @@ export default function Home() {
 
         return result;
       });
-    }, 200);
+    }, 250);
 
     // 0.2초마다 result를 return
     return () => {
@@ -48,7 +48,7 @@ export default function Home() {
   useEffect(() => {
     setInterval(() => {
       setVisibleContent(true);
-    }, 5800);
+    }, 6300);
   }, []);
 
   return (

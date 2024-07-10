@@ -7,7 +7,7 @@ interface Props {
 
 const SkillsIcon = ({ skillName }: Props) => {
   return (
-    <div className="w-24 h-24 flex flex-col items-center">
+    <div className="w-24 h-24 flex flex-col items-center justify-center rounded-xl hover:bg-slate-100">
       <div className="relative w-14 h-14">
         <Image src={`/${skillName}.svg`} alt="" fill />
       </div>

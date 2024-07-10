@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 const Header = () => {
     const router = useRouter();
   return (
-    <header className="fixed top-0 w-full flex justify-between items-center px-6 h-16 shadow-bottom">
+    <header className="fixed bg-white z-10 top-0 w-full flex justify-between items-center px-6 h-16 shadow-bottom">
       <div className="">🖥️ Developer. Seoyeon</div>
       <ul className="flex gap-10">
         <li onClick={()=>router.push('/')}>HOME</li>
