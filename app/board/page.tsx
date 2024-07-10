@@ -1,44 +1,32 @@
-import Posting from "@/actions/post";
 import React from "react";
+import PostingForm from "../_component/posting-form";
+import clientPromise from "@/lib/db";
 
-const Board = () => {
+export default async function Board() {
+  const client = await clientPromise;
+  const portfolio = client.db("portfolio");
+  const board = portfolio.collection("board");
+  const posts = await board.find().toArray();
+
   return (
     <div className="w-full h-full flex justify-center">
-      <div className="flex justify-center w-[60rem] mt-16 pt-10">
-        <form className="flex flex-col" action={Posting}>
-          <div className="flex mb-2">
-            <input
-              placeholder="작성자"
-              type="text"
-              id="writer"
-              name="writer"
-              className="mr-2 outline-none border-[1px] border-gray-400 p-2"
-            />
-            <input
-              placeholder="비밀번호"
-              type="password"
-              id="password"
-              name="password"
-              className="outline-none border-[1px] border-gray-400 p-2"
-            />
-          </div>
-          <textarea
-            className="h-32 resize-none outline-none border-[1px] border-gray-400 p-2"
-            cols={100}
-            id="content"
-            name="content"
-            placeholder="한마디를 남겨보세요."
-          />
-          <button className="w-20 h-10 self-end mt-2 bg-gray-800 text-white">
-            작성
-          </button>
-        </form>
-      </div>
-      <div>
-        게시글 목록
+      <div className="flex flex-col w-[60rem] mt-16 pt-10 ">
+        <PostingForm />
+        <div>
+          <ul className="w-full h-full bg-gray-200 p-5 mt-3">
+            {posts.map((post) => (
+              <li
+                key={post.content}
+                className="w-full h-auto bg-white mt-6 p-4"
+              >
+                <p className="text-md">{post.writer}</p>
+                <p className="font-bold text-2xl">{post.content}</p>
+                <p className="font-thin text-sm">{post.posting_time}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
-};
-
-export default Board;
+}
