@@ -12,9 +12,19 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        develop: "url('/back.JPG')",
       },
       boxShadow: {
         bottom: "0 5px 5px -5px #333",
+      },
+      animation: {
+        fade: "fadeIn .5s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
       },
     },
   },
