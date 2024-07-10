@@ -64,16 +64,30 @@ export default function About() {
         {/* 자격증 */}
         <div className="w-full pt-12 pb-20">
           <h2 className="font-bold text-4xl mb-9">🪪 Certification</h2>
-          <div className="flex text-lg">
-            <div className="ml-10 font-bold space-y-1">
-              <p>자격증명</p>
-              <p>취득일</p>
-              <p>주관</p>
+          <div className="flex justify-center pb-10">
+            <div className="flex text-lg border-r-2 pr-7">
+              <div className="ml-10 font-bold space-y-1">
+                <p>자격증명</p>
+                <p>취득일</p>
+                <p>주관</p>
+              </div>
+              <div className="ml-16 space-y-1">
+                <p>정보처리기사</p>
+                <p>실기 2023.10 ・ 필기 2023.08</p>
+                <p>한국산업인력공단</p>
+              </div>
             </div>
-            <div className="ml-16 space-y-1">
-              <p>정보처리기사</p>
-              <p>실기 : 2023.10 | 필기 2023.08</p>
-              <p>한국산업인력공단</p>
+            <div className="flex text-lg">
+              <div className="ml-10 font-bold space-y-1">
+                <p>자격증명</p>
+                <p>취득일</p>
+                <p>주관</p>
+              </div>
+              <div className="ml-16 space-y-1">
+                <p>TOEIC Speaking IM3 (Score 130)</p>
+                <p>2023.12.09</p>
+                <p>ETS</p>
+              </div>
             </div>
           </div>
         </div>
