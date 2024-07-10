@@ -31,7 +31,7 @@ const Header = () => {
           ABOUT ME
         </li>
         <li className="cursor-pointer">PROJECT</li>
-        <li className="cursor-pointer">ONE WORD</li>
+        <li className="cursor-pointer"onClick={() => handleNavigate("/board")}>ONE WORD</li>
       </ul>
     </header>
   );
