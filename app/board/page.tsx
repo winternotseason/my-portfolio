@@ -1,6 +1,8 @@
 import React from "react";
 import PostingForm from "../_component/posting-form";
 import clientPromise from "@/lib/db";
+import { GiPencil } from "react-icons/gi";
+import PostDeleteButton from "../_component/post-delete-btn";
 
 export default async function Board() {
   const client = await clientPromise;
@@ -13,15 +15,30 @@ export default async function Board() {
       <div className="flex flex-col w-[60rem] mt-16 pt-10 ">
         <PostingForm />
         <div>
-          <ul className="w-full h-full bg-gray-200 p-5 mt-3">
+          <ul className="flex flex-col items-center justify-center w-full h-full bg-gray-300 p-5 mt-7 rounded-3xl">
+            {posts.length === 0 && (
+              <h1 className="text-xl font-semibold ">
+                게시글이 존재하지 않습니다.
+              </h1>
+            )}
             {posts.map((post) => (
               <li
                 key={post.content}
-                className="w-full h-auto bg-white mt-6 p-4"
+                className="flex flex-col w-full h-auto bg-white mt-6 p-4 rounded-xl"
               >
-                <p className="text-md">{post.writer}</p>
-                <p className="font-bold text-2xl">{post.content}</p>
-                <p className="font-thin text-sm">{post.posting_time}</p>
+                <div className="flex justify-between text-md mb-3">
+                  <div className="flex items-center">
+                    <p className="mr-1">
+                      <GiPencil />
+                    </p>
+                    <p>{post.writer}</p>
+                  </div>
+                  <PostDeleteButton postId={post._id.toString()} />
+                </div>
+                <div className="h-auto font-bold text-2xl">{post.content}</div>
+                <p className="font-light text-sm text-gray-400 self-end">
+                  {post.posting_time}
+                </p>
               </li>
             ))}
           </ul>
