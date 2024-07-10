@@ -26,6 +26,9 @@ const config: Config = {
           to: { opacity: "1" },
         },
       },
+      margin : {
+        icon : "7.8rem"
+      }
     },
   },
   plugins: [],
