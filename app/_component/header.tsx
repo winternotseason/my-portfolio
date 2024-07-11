@@ -30,7 +30,7 @@ const Header = () => {
         <li className="cursor-pointer" onClick={() => handleNavigate("/about")}>
           ABOUT ME
         </li>
-        <li className="cursor-pointer">PROJECT</li>
+        <li className="cursor-pointer" onClick={() => handleNavigate("/project")}>PROJECT</li>
         <li className="cursor-pointer"onClick={() => handleNavigate("/board")}>ONE WORD</li>
       </ul>
     </header>

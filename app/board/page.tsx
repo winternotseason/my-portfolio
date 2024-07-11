@@ -11,13 +11,13 @@ export default async function Board() {
   const posts = await board.find().toArray();
 
   return (
-    <div className="w-full h-full flex justify-center">
+    <div className="w-full h-full flex justify-center animate-fade">
       <div className="flex flex-col w-[60rem] mt-16 pt-10 ">
         <PostingForm />
         <div>
-          <ul className="flex flex-col items-center justify-center w-full h-full bg-gray-300 p-5 mt-7 rounded-3xl">
+          <ul className="flex flex-col items-center justify-center w-full h-full border-2 p-5 mt-7 rounded-2xl">
             {posts.length === 0 && (
-              <h1 className="text-xl font-semibold ">
+              <h1 className="text-md font-semibold ">
                 게시글이 존재하지 않습니다.
               </h1>
             )}

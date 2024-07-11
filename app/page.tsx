@@ -1,15 +1,18 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const completionWord = "안녕하세요1머머하는 개발자1황서연입니다";
+  const router = useRouter();
   const [display, setDisplay] = useState(""); // display 되는 텍스트
   const [count, setCount] = useState(0); // 현재 타이핑의 카운트
   const [end, setEnd] = useState(false);
   const [visibleContent, setVisibleContent] = useState(false);
 
   useEffect(() => {
+    
     const typingInterval = setInterval(() => {
       setDisplay((prevTitleValue) => {
         if (end) {
@@ -51,10 +54,13 @@ export default function Home() {
     }, 6300);
   }, []);
 
+  if(visibleContent){
+    router.replace('/about')
+  }
+
   return (
     <div className="w-full h-full flex justify-center items-center">
       <h1 className="text-6xl font-extrabold">{display}</h1>
-      {visibleContent ? <div className="animate-fade">content!!!!</div> : ""}
     </div>
   );
 }

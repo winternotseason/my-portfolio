@@ -26,6 +26,9 @@ const config: Config = {
           to: { opacity: "1" },
         },
       },
+      brightness : {
+        25 : '.25'
+      }
     },
   },
   plugins: [],

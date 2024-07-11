@@ -14,6 +14,7 @@ const PostDeleteButton = ({ postId }: { postId: string }) => {
       });
       const result = await response.json();
       if (result.status === 201) {
+        // location.reload() 좀 아닌 것 같음... 다시 생각해봐
         location.reload();
       } else {
         console.log("게시글 삭제 오류");
