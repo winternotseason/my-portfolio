@@ -23,7 +23,7 @@ const Header = () => {
       >
         Dev. Seoyeon
       </div>
-      <ul className="flex gap-10 font-semibold">
+      <ul className="gap-10 font-semibold hidden md:flex">
         <li className="cursor-pointer" onClick={() => handleNavigate("/")}>
           HOME
         </li>

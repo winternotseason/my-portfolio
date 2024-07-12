@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <div className="w-full h-[30rem] flex justify-around border-b-2">
-      <div className="flex items-center justify-center w-96 h-full ">
-        <div className="relative w-80 h-80 rounded-full overflow-hidden">
+    <div className="w-full pb-4 flex flex-col items-center border-b-2 md:flex-row md:justify-around">
+      <div className="flex items-center justify-center w-full h-full ">
+        <div className="relative w-2/3 aspect-square md:w-80 md:h-80 rounded-full overflow-hidden">
           <Image src="/profile.JPG" fill alt="profile" sizes="100%" />
         </div>
       </div>
       <div className="flex flex-col justify-center h-full p-4">
         <div>
-          <h2 className="font-bold text-3xl text-indigo-800 mb-3">ABOUT ME</h2>
-          <div className="flex text-lg">
+          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3">ABOUT ME</h2>
+          <div className="flex md:text-lg">
             <div className="font-bold space-y-1">
               <p>이름</p>
               <p>생년월일</p>
@@ -26,8 +26,8 @@ const Info = () => {
           </div>
         </div>
         <div className="mt-7">
-          <h2 className="font-bold text-3xl text-indigo-800 mb-3">CONTACT</h2>
-          <div className="flex text-lg">
+          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3">CONTACT</h2>
+          <div className="flex md:text-lg">
             <div className="font-bold space-y-1">
               <p>Phone.</p>
               <p>Email.</p>

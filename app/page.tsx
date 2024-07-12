@@ -5,20 +5,20 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center animate-fade">
       {/* header */}
-      <div className="w-[60rem] mt-16">
+      <div className="w-4/5 md:w-[60rem] mt-16">
         {/* main-contents header */}
-        <div className="w-full flex items-center py-14 px-10">
-          <div className="text-4xl border-l-8 border-indigo-800 pl-3 font-semibold">
+        <div className="w-full flex items-center justify-center py-10 md:py-14 md:px-10 md:justify-normal">
+          <div className="text-2xl md:text-4xl border-l-8 border-indigo-800 pl-3 font-semibold ">
             황서연(Hwang SeoYeon)
           </div>
         </div>
         <Info />
         {/* Skills */}
-        <div className="w-full border-b-2 py-10">
-          <h2 className="font-bold text-4xl mb-9">📖 SKILLS</h2>
-          <div className="flex px-6">
-            <div className="text-2xl font-bold">FrontEnd.</div>
-            <div className="flex flex-col ml-10 text-base font-semibold">
+        <div className="flex flex-col items-center w-full border-b-2 py-10  md:items-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-9 md:text-start">📖 SKILLS</h2>
+          <div className="flex flex-col md:flex-row px-6">
+            <div className="text-lg md:text-2xl font-bold text-center md:text-start">FrontEnd.</div>
+            <div className="flex flex-col mt-2 md:mt-0 items-center md:items-start md:ml-10 text-sm md:text-base font-semibold">
               <div className="flex">
                 <SkillsIcon skillName="HTML" />
                 <SkillsIcon skillName="CSS" />
@@ -34,9 +34,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex px-6 mt-8">
-            <div className="text-2xl font-bold">Others.</div>
-            <div className="flex items-center ml-[4.5rem] text-base space-x-6 font-semibold relative">
+          <div className="flex flex-col mt-4 md:mt-0 md:flex-row items-center md:items-start px-6">
+            <div className="text-lg md:text-2xl font-bold  md:text-start">Others.</div>
+            <div className="flex items-center ml-0 md:ml-[4.5rem] text-base space-x-6 font-semibold relative">
               <SkillsIcon skillName="MongoDB" />
               <SkillsIcon skillName="MySQL" />
               <SkillsIcon skillName="Vercel" />
@@ -45,15 +45,15 @@ export default function Home() {
           </div>
         </div>
         {/* 학력 */}
-        <div className="w-full border-b-2 py-10">
-          <h2 className="font-bold text-4xl mb-9">🎓 Education</h2>
-          <div className="flex text-lg">
-            <div className="ml-10 font-bold space-y-1">
+        <div className="w-full border-b-2 py-5 md:py-10 flex flex-col items-center md:items-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">🎓 Education</h2>
+          <div className="flex md:text-lg">
+            <div className="md:ml-10 font-bold space-y-1">
               <p>학교명</p>
               <p>학과명</p>
               <p>학점</p>
             </div>
-            <div className="ml-16 space-y-1">
+            <div className="ml-10 md:ml-16 space-y-1">
               <p>인하대학교</p>
               <p>경영학, 산업경영공학 복수전공</p>
               <p>3.91/4.5</p>
@@ -61,29 +61,29 @@ export default function Home() {
           </div>
         </div>
         {/* 자격증 */}
-        <div className="w-full pt-12 pb-20">
-          <h2 className="font-bold text-4xl mb-9">🪪 Certification</h2>
-          <div className="flex justify-center pb-10">
-            <div className="flex text-lg border-r-2 pr-7">
-              <div className="ml-10 font-bold space-y-1">
+        <div className="w-full pt-8 md:pt-12 pb-5 md:pb-10 flex flex-col items-center md:items-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">🪪 Certification</h2>
+          <div className="flex flex-col justify-center items-center md:items-start pb-10 md:flex-row">
+            <div className="flex text-md md:text-lg border-b-2 pr-7 md:border-r-2 md:border-b-0">
+              <div className="md:ml-10 font-bold space-y-1">
                 <p>자격증명</p>
                 <p>취득일</p>
                 <p>주관</p>
               </div>
-              <div className="ml-16 space-y-1">
+              <div className="mb-5 ml-10 md:ml-16 space-y-1 md:mb-0">
                 <p>정보처리기사</p>
-                <p>실기 2023.10 ・ 필기 2023.08</p>
+                <p>2023.10</p>
                 <p>한국산업인력공단</p>
               </div>
             </div>
-            <div className="flex text-lg">
-              <div className="ml-10 font-bold space-y-1">
+            <div className="flex text-md md:text-lg mt-5 md:mt-0">
+              <div className="md:ml-10 font-bold space-y-1">
                 <p>자격증명</p>
                 <p>취득일</p>
                 <p>주관</p>
               </div>
-              <div className="ml-16 space-y-1">
-                <p>TOEIC Speaking IM3 (Score 130)</p>
+              <div className="ml-10 md:ml-16 space-y-1">
+                <p>TOEIC Speaking IM3</p>
                 <p>2023.12.09</p>
                 <p>ETS</p>
               </div>
