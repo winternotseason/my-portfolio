@@ -26,11 +26,12 @@ const config: Config = {
           to: { opacity: "1" },
         },
       },
-      brightness : {
-        25 : '.25'
-      }
+      brightness: {
+        25: ".25",
+      },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
 export default config;

@@ -24,7 +24,7 @@ export default async function Board() {
             {posts.map((post) => (
               <li
                 key={post.content}
-                className="flex flex-col w-full h-auto bg-white mt-6 p-4 rounded-xl"
+                className="flex flex-col w-full h-auto bg-white mt-6 p-4 rounded-xl dark:bg-black"
               >
                 <div className="flex justify-between text-md mb-3">
                   <div className="flex items-center">

@@ -14,7 +14,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="fixed bg-white z-10 top-0 w-full flex justify-between items-center px-6 h-16 shadow-bottom">
+    <header className="fixed bg-white z-10 top-0 w-full flex justify-between items-center px-6 h-16 shadow-bottom dark:bg-black">
       <div
         className="font-bold text-lg cursor-pointer"
         onClick={() => {
@@ -27,11 +27,15 @@ const Header = () => {
         <li className="cursor-pointer" onClick={() => handleNavigate("/")}>
           HOME
         </li>
-        <li className="cursor-pointer" onClick={() => handleNavigate("/about")}>
-          ABOUT ME
+        <li
+          className="cursor-pointer"
+          onClick={() => handleNavigate("/project")}
+        >
+          PROJECT
         </li>
-        <li className="cursor-pointer" onClick={() => handleNavigate("/project")}>PROJECT</li>
-        <li className="cursor-pointer"onClick={() => handleNavigate("/board")}>ONE WORD</li>
+        <li className="cursor-pointer" onClick={() => handleNavigate("/board")}>
+          ONE WORD
+        </li>
       </ul>
     </header>
   );
