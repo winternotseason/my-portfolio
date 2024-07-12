@@ -14,12 +14,12 @@ export default function Home() {
         </div>
         <Info />
         {/* Skills */}
-        <div className="w-full flex flex-col items-center w-full border-b-2 py-10 md:items-start">
+        <div className="w-full flex flex-col border-b-2 py-10 md:items-start px-6">
           <h2 className="font-bold text-2xl md:text-4xl mb-9 md:text-start">
             📖 SKILLS
           </h2>
-          <div className="flex flex-col md:flex-row px-6">
-            <div className="text-lg md:text-2xl ml-2 font-bold md:text-start">
+          <div className="flex flex-col md:flex-row ">
+            <div className="text-lg md:text-2xl font-bold md:text-start">
               FrontEnd.
             </div>
             <div className="flex flex-col mt-2 md:mt-0  md:items-start md:ml-10 text-sm md:text-base font-semibold">
@@ -38,7 +38,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col mt-4 md:mt-0 md:flex-row md:items-start px-6">
+          <div className="flex flex-col mt-4 md:mt-0 md:flex-row md:items-start ">
             <div className="text-lg md:text-2xl font-bold md:text-start">
               Others.
             </div>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         {/* 학력 */}
-        <div className="w-full border-b-2 py-5 md:py-10 flex flex-col pl-6 md:items-start">
+        <div className="w-full border-b-2 p-6 md:py-10 flex flex-col  md:items-start">
           <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
             🎓 Education
           </h2>
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         {/* 자격증 */}
-        <div className="w-full pt-8 md:pt-12 pb-5 md:pb-10 flex flex-col pl-6 md:items-start">
+        <div className="w-full pt-8 md:pt-12 p-6 md:pb-10 flex flex-col  md:items-start">
           <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
             🪪 Certification
           </h2>
