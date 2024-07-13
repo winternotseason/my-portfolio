@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <div className="w-full pb-4 flex flex-col items-center border-b-2 md:flex-row md:justify-around">
+    <div className="w-full pb-4 flex flex-col border-b-2 md:flex-row md:justify-around">
       <div className="flex items-center justify-center w-full h-full ">
         <div className="relative w-2/3 aspect-square md:w-80 md:h-80 rounded-full overflow-hidden">
           <Image src="/profile.JPG" fill alt="profile" sizes="100%" />
         </div>
       </div>
-      <div className="flex flex-col justify-center h-full p-4">
+      <div className="flex flex-col justify-center h-full">
         <div>
           <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3">ABOUT ME</h2>
           <div className="flex md:text-lg">

@@ -7,8 +7,8 @@ import React from "react";
 const Project = () => {
   const router = useRouter();
   return (
-    <div className="w-full h-full flex justify-center animate-fade">
-      <div className="flex flex-col w-3/4 md:w-[70rem] md:mt-16 md:pt-10 mt-5 relative">
+    <div id="project" className="w-full h-full flex justify-center animate-fade">
+      <div className="flex flex-col w-3/4 md:w-[70rem]  md:mt-16 md:pt-10 mt-5 relative">
         <ul className="grid md:grid-cols-2 gap-10 md:gap-3 mt-20 pb-10 justify-center md:justify-normal">
           <li className="relative w-72 h-52 md:w-[32rem] md:h-[24rem] border-2 p-2 group rounded-md">
             <Image

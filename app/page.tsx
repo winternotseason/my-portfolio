@@ -5,18 +5,24 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center animate-fade">
       {/* header */}
-      <div className="w-full md:w-[60rem] mt-16">
+      <div className="w-full md:w-[60rem] mt-16 p-8 md:p-0">
         {/* main-contents header */}
-        <div className="w-full flex items-center justify-center py-10 md:py-14 md:px-10 md:justify-normal">
+        <div className="w-full flex items-center py-10 md:py-14 md:px-10 md:justify-normal">
           <div className="text-2xl md:text-4xl border-l-8 border-indigo-800 pl-3 font-semibold ">
             황서연(Hwang SeoYeon)
           </div>
         </div>
         <Info />
         {/* Skills */}
-        <div className="w-full flex flex-col border-b-2 py-10 md:items-start px-6">
+        <div className="w-full flex flex-col border-b-2 py-10 md:items-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9 md:text-start">
+            Introduce
+          </h2>
+          <p className="md:text-xl">안녕하세요. 사용자의 경험에 큰 가치를 두고있는 프론트엔드 개발자 황서연입니다.</p>
+        </div>
+        <div className="w-full flex flex-col border-b-2 py-10 md:items-start">
           <h2 className="font-bold text-2xl md:text-4xl mb-9 md:text-start">
-            📖 SKILLS
+            SKILLS
           </h2>
           <div className="flex flex-col md:flex-row ">
             <div className="text-lg md:text-2xl font-bold md:text-start">
@@ -40,20 +46,18 @@ export default function Home() {
           </div>
           <div className="flex flex-col mt-4 md:mt-0 md:flex-row md:items-start ">
             <div className="text-lg md:text-2xl font-bold md:text-start">
-              Others.
+              Database
             </div>
             <div className="flex items-center ml-0 md:ml-[4.5rem] text-base space-x-5 font-semibold relative">
               <SkillsIcon skillName="MongoDB" />
               <SkillsIcon skillName="MySQL" />
-              <SkillsIcon skillName="Vercel" />
-              <SkillsIcon skillName="NodeJS" />
             </div>
           </div>
         </div>
         {/* 학력 */}
-        <div className="w-full border-b-2 p-6 md:py-10 flex flex-col  md:items-start">
+        <div className="w-full border-b-2 py-6 md:py-10 flex flex-col  md:items-start">
           <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
-            🎓 Education
+            Education
           </h2>
           <div className="flex md:text-lg">
             <div className="md:ml-10 font-bold space-y-1">
@@ -69,9 +73,9 @@ export default function Home() {
           </div>
         </div>
         {/* 자격증 */}
-        <div className="w-full pt-8 md:pt-12 p-6 md:pb-10 flex flex-col  md:items-start">
+        <div className="w-full pt-8 md:pt-12 py-6 md:pb-10 flex flex-col  md:items-start">
           <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
-            🪪 Certification
+            Certification
           </h2>
           <div className="flex flex-col justify-center  md:items-start pb-10 md:flex-row">
             <div className="flex text-md md:text-lg  pr-7 md:border-r-2 md:border-b-0">

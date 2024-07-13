@@ -14,27 +14,19 @@ const Header = () => {
     }
   };
   return (
-    <header className="fixed bg-white z-10 top-0 w-full flex justify-between items-center px-6 h-16 shadow-bottom dark:bg-black">
-      <div
-        className="font-bold text-lg cursor-pointer"
-        onClick={() => {
-          handleNavigate("/");
-        }}
-      >
-        Dev. Seoyeon
-      </div>
-      <ul className="gap-10 font-semibold hidden md:flex">
+    <header className="fixed bg-white z-10 top-0 w-full flex justify-end items-center px-6 h-16 shadow-bottom dark:bg-black">
+      <ul className="gap-3 md:gap-10 font-semibold flex text-sm">
         <li className="cursor-pointer" onClick={() => handleNavigate("/")}>
-          HOME
+          About
         </li>
         <li
           className="cursor-pointer"
           onClick={() => handleNavigate("/project")}
         >
-          PROJECT
+          Project
         </li>
         <li className="cursor-pointer" onClick={() => handleNavigate("/board")}>
-          ONE WORD
+          Board
         </li>
       </ul>
     </header>

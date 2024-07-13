@@ -10,14 +10,9 @@ export default async function Posting(
   formData: FormData
 ) {
   const writer = formData.get("writer") as string;
-  const password = formData.get("password") as string;
   const content = formData.get("content") as string;
-  const hashedPassword = await hashUserPassword(password);
   if (writer.trim().length === 0) {
     return { message: "작성자를 입력해주세요." };
-  }
-  if (password.trim().length === 0) {
-    return { message: "비밀번호를 입력해주세요." };
   }
   if (content.trim().length === 0) {
     return { message: "내용을 입력해주세요." };
@@ -38,7 +33,6 @@ export default async function Posting(
 
     await board.insertOne({
       writer,
-      password: hashedPassword,
       content,
       posting_time: postingTimeString,
     });

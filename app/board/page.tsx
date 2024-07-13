@@ -12,7 +12,7 @@ export default async function Board() {
 
   return (
     <div className="w-full h-full flex justify-center animate-fade">
-      <div className="flex flex-col w-[60rem] mt-16 pt-10 ">
+      <div className="flex flex-col w-3/4 max-w-[60rem] mt-16 pt-10 ">
         <PostingForm />
         <div>
           <ul className="flex flex-col items-center justify-center w-full h-full border-2 p-5 mt-7 rounded-2xl">
