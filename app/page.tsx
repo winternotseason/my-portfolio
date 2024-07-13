@@ -8,20 +8,37 @@ export default function Home() {
       <div className="w-full md:w-[60rem] mt-16 p-8 md:p-0">
         {/* main-contents header */}
         <div className="w-full flex items-center py-10 md:py-14 md:px-10 md:justify-normal">
-          <div className="text-2xl md:text-4xl border-l-8 border-indigo-800 pl-3 font-semibold ">
+          <div className="text-2xl md:text-4xl border-l-8 border-indigo-800 pl-3 font-semibold dark:border-indigo-600">
             황서연(Hwang SeoYeon)
           </div>
         </div>
         <Info />
         {/* Skills */}
         <div className="w-full flex flex-col border-b-2 py-10 md:items-start">
-          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9 md:text-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9 md:text-start text-indigo-800 dark:text-indigo-600">
             Introduce
           </h2>
-          <p className="md:text-xl">안녕하세요. 사용자의 경험에 큰 가치를 두고있는 프론트엔드 개발자 황서연입니다.</p>
+          <div className="text-gray-700 font-semibold md:text-lg dark:text-white">
+            <p>
+              안녕하세요. 사용자의 경험에 큰 가치를 두고 있는 프론트엔드 개발자
+              황서연입니다.
+            </p>
+            <br />
+            <p>
+              웹/앱을 방문하는 사용자와 최전방에서 상호작용하는 개발자의 마음을
+              가지고 항상 적극적으로 최적화를 하기 위해 노력하고 있습니다.
+            </p>
+            <br />
+            <p>
+              또, 모르거나 알아야만 하는 지식에 대해 회피하기보다는 적극적으로
+              배우려는 학습적 태도를 생활화합니다.
+            </p>
+            <br />
+            <p>누구보다 트렌드를 따라가는 프론트엔드 개발자가 되고 싶습니다.</p>
+          </div>
         </div>
         <div className="w-full flex flex-col border-b-2 py-10 md:items-start">
-          <h2 className="font-bold text-2xl md:text-4xl mb-9 md:text-start">
+          <h2 className="font-bold text-2xl md:text-4xl mb-9 md:text-start text-indigo-800 dark:text-indigo-600">
             SKILLS
           </h2>
           <div className="flex flex-col md:flex-row ">
@@ -56,7 +73,7 @@ export default function Home() {
         </div>
         {/* 학력 */}
         <div className="w-full border-b-2 py-6 md:py-10 flex flex-col  md:items-start">
-          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9 text-indigo-800 dark:text-indigo-600">
             Education
           </h2>
           <div className="flex md:text-lg">
@@ -74,7 +91,7 @@ export default function Home() {
         </div>
         {/* 자격증 */}
         <div className="w-full pt-8 md:pt-12 py-6 md:pb-10 flex flex-col  md:items-start">
-          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4 md:mb-9 text-indigo-800 dark:text-indigo-600">
             Certification
           </h2>
           <div className="flex flex-col justify-center  md:items-start pb-10 md:flex-row">
