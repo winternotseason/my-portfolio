@@ -3,7 +3,7 @@ import Link from "next/link";
 const Info = () => {
   return (
     <div className="w-full pb-10 flex flex-col border-b-2 md:flex-row md:justify-around">
-      <div className="flex justify-between w-full h-full">
+      <div className="flex justify-between w-full h-full flex-col md:flex-row">
         <div>
           <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">
             ABOUT ME
@@ -21,7 +21,7 @@ const Info = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mt-8 md:mt-0">
           <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">
             CONTACT
           </h2>

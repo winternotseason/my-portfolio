@@ -16,7 +16,9 @@ export default function NavLink({
     <Link
       href={href}
       className={
-        path === href ? "text-indigo-700 border-b-2 border-indigo-700 hover:text-indigo-400 hover:border-indigo-400" : "text-indigo-700 hover:text-indigo-300"
+        path === href
+          ? "text-lg text-indigo-800 border-b-2 border-indigo-800 hover:text-indigo-400 hover:border-indigo-400 font-semibold"
+          : "text-lg text-indigo-800 hover:text-indigo-300"
       }
     >
       <div>{children}</div>
