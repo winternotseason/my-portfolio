@@ -21,7 +21,7 @@ const Project = () => {
               <p className="text-xl font-semibold">&gt; MINE</p>
               <p className="py-6">
                 네이버 쇼핑 API를 이용하여 사용자가 원하는 상품을 최저가로
-                만나볼 볼 수 있는 NextJS로 구현한 쇼핑 사이트입니다. MongoDB와
+                만나볼 수 있는 NextJS로 구현한 쇼핑 사이트입니다. MongoDB와
                 Next-Auth 라이브러리를 통해 자체 회원 기능을 마련하였고, 실제
                 구매 사이트로 이동이 가능합니다.
               </p>
