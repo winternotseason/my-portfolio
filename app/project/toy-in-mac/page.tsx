@@ -38,7 +38,6 @@ const ToyInMac = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
             />
           </div>
           <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 brightness-100">
@@ -48,7 +47,6 @@ const ToyInMac = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
             />
           </div>
           <div className="absolute -right-[28rem] w-[70rem] md:min-h-[55rem] hidden brightness-75 md:block hover:z-20 hover:brightness-100">
@@ -58,7 +56,6 @@ const ToyInMac = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
             />
           </div>
         </div>

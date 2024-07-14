@@ -36,7 +36,6 @@ const Mine = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
             />
           </div>
           <div className="w-full aspect-[2/1.7] md:min-h-[55rem] relative">
@@ -46,7 +45,6 @@ const Mine = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
 
             />
           </div>
@@ -57,7 +55,6 @@ const Mine = () => {
               alt="mine-main"
               quality={50}
               sizes="100%"
-              priority
             />
           </div>
         </div>

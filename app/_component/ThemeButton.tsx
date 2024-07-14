@@ -1,13 +1,13 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { MdOutlineWbSunny } from "react-icons/md";
-import { IoMoonOutline } from "react-icons/io5";
+import Image from "next/image";
+
 import { useEffect, useState } from "react";
 
 export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
- 
+
   return (
     <div className="flex z-10 bg-white items-center justify-center fixed bottom-8 right-10 border-2 border-gray-100 w-14 h-14 shadow-lg rounded-full">
       <button
@@ -16,9 +16,19 @@ export default function ThemeButton() {
         }}
       >
         {theme === "dark" ? (
-          <MdOutlineWbSunny color="#000000"size={30} />
+          <Image
+            src="/sun.svg"
+            width={30}
+            height={30}
+            alt="sun"
+          />
         ) : (
-          <IoMoonOutline color="#edb60f" size={30} />
+          <Image
+            src="/moon.svg"
+            width={30}
+            height={30}
+            alt="moon"
+          />
         )}
       </button>
     </div>
