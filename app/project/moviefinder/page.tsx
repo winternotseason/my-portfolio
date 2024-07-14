@@ -35,6 +35,9 @@ const MovieFinder = () => {
               src="/movie-finder/moviefinder-side2.png"
               fill
               alt="mine-main"
+              quality={50}
+              sizes="100%"
+              priority
             />
           </div>
           <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 brightness-100">
@@ -42,6 +45,8 @@ const MovieFinder = () => {
               src="/movie-finder/moviefinder-main.png"
               fill
               alt="mine-main"
+              quality={50}
+              sizes="100%"
               priority
             />
           </div>
@@ -50,6 +55,9 @@ const MovieFinder = () => {
               src="/movie-finder/moviefinder-side1.png"
               fill
               alt="mine-main"
+              quality={50}
+              sizes="100%"
+              priority
             />
           </div>
         </div>
