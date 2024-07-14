@@ -7,7 +7,7 @@ export default function Home() {
       {/* header */}
       <div className="w-full md:w-[60rem] mt-16 p-8 md:p-0">
         {/* main-contents header */}
-        <div className="w-full flex items-center py-10 md:py-14 md:px-10 md:justify-normal">
+        <div className="w-full flex items-center py-10 md:py-14  md:justify-normal">
           <div className="text-2xl md:text-4xl border-l-8 border-indigo-800 pl-3 font-semibold dark:border-indigo-600">
             황서연(Hwang SeoYeon)
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
             SKILLS
           </h2>
           <div className="flex flex-col md:flex-row ">
-            <div className="text-lg md:text-2xl font-bold md:text-start">
+            <div className="text-lg md:text-2xl font-semibold md:text-start">
               FrontEnd.
             </div>
             <div className="flex flex-col mt-2 md:mt-0  md:items-start md:ml-10 text-sm md:text-base font-semibold">
@@ -55,17 +55,17 @@ export default function Home() {
               <div className="flex mt-2">
                 <SkillsIcon skillName="React" />
                 <SkillsIcon skillName="NextJS" />
-                <SkillsIcon skillName="Tailwind" />
+                <SkillsIcon skillName="TailwindCSS" />
                 <SkillsIcon skillName="Zustand" />
                 <SkillsIcon skillName="Styled-C" />
               </div>
             </div>
           </div>
-          <div className="flex flex-col mt-4 md:mt-0 md:flex-row md:items-start ">
-            <div className="text-lg md:text-2xl font-bold md:text-start">
-              Database
+          <div className="flex flex-col mt-4 md:mt-10 md:flex-row md:items-start">
+            <div className="text-lg md:text-2xl font-semibold md:text-start">
+              Database.
             </div>
-            <div className="flex items-center ml-0 md:ml-[4.5rem] text-base space-x-5 font-semibold relative">
+            <div className="flex items-center ml-0 md:ml-[2.8rem] space-x-5 font-semibold text-sm md:text-base relative">
               <SkillsIcon skillName="MongoDB" />
               <SkillsIcon skillName="MySQL" />
             </div>
@@ -81,11 +81,13 @@ export default function Home() {
               <p>학교명</p>
               <p>학과명</p>
               <p>학점</p>
+              <p>상태</p>
             </div>
             <div className="ml-10 md:ml-16 space-y-1">
               <p>인하대학교</p>
               <p>경영학, 산업경영공학 복수전공</p>
               <p>3.91/4.5</p>
+              <p>졸업 · 2020.02-2024.02</p>
             </div>
           </div>
         </div>

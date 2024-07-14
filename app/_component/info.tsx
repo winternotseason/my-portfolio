@@ -1,17 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Info = () => {
   return (
-    <div className="w-full pb-8 flex flex-col border-b-2 md:flex-row md:justify-around">
-      <div className="flex items-center justify-center w-full h-full ">
-        <div className="relative w-2/3 aspect-square md:w-80 md:h-80 rounded-full overflow-hidden">
-          <Image src="/profile.JPG" fill alt="profile" sizes="100%" />
-        </div>
-      </div>
-      <div className="flex flex-col justify-center h-full">
+    <div className="w-full pb-10 flex flex-col border-b-2 md:flex-row md:justify-around">
+      <div className="flex justify-between w-full h-full">
         <div>
-          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">ABOUT ME</h2>
+          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">
+            ABOUT ME
+          </h2>
           <div className="flex md:text-lg">
             <div className="font-bold space-y-1">
               <p>이름</p>
@@ -25,8 +21,10 @@ const Info = () => {
             </div>
           </div>
         </div>
-        <div className="mt-7">
-          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">CONTACT</h2>
+        <div>
+          <h2 className="font-bold text-2xl md:text-3xl text-indigo-800 mb-3 dark:text-indigo-600">
+            CONTACT
+          </h2>
           <div className="flex md:text-lg">
             <div className="font-bold space-y-1">
               <p>Phone.</p>

@@ -8,58 +8,54 @@ const ToyInMac = () => {
     <div className="w-full h-full flex justify-center animate-fade">
       <div className="md:mt-14 w-full max-w-[40rem] md:max-w-[70rem] pt-16 px-10 flex flex-col ">
         <h1 className="font-semibold text-3xl mt-10 pb-3 border-b-2">
-          Toy IN Mac OS
+          Toy IN mac OS
         </h1>
         <p className="my-4 space-y-3">
           <p>
-            TMDB Open API를 이용하여 개발한
+            NextJS APP router 라우팅 시스템으로 개발한
             <span className="ml-1 font-semibold">
-              영화 검색 결과, 세부 영화 정보, 인기 영화 순위와 개봉 예정 영화
-              차트를 만나볼 수 있는 사이트
+              계산기, 날씨 앱을 mac OS UI에 나타낸 앱
             </span>
             입니다.
           </p>
           <p>
-            기존의 webpack을 사용하여 빌드하는 CRA 대신 ESBuild를 사용한 Vite를
-            빌드 도구로 채택하면서, 빨라진 개발환경을 크게 체감할 수 있었습니다.
+            최근 NextJS에 도입된 Parallel Route와 Intercepting Route 기능을
+            사용하여 토이 프로젝트들을 모달처럼 배치하면서, NextJS의 다양한
+            기능들을 익힐 수 있었습니다.
           </p>
           <p>
-            또 비동기 통신 라이브러리 axios를 이용하여 서버와 데이터를 주고
-            받음으로써 HTTP 메서드에 대해 익힐 수 있었고, async/await 구문을
-            사용하여 간결하고 효율적인 코드를 작성할 수 있었습니다.
+            openweatherApi와의 통신을 통해 날씨 앱을 구현하였습니다. 그
+            과정속에서 데이터를 적절히 가공하는데 Promise.all과 같은 평소에 자주
+            사용해보지 못했던 자바스크립트 함수를 다시 한번 확실히 익힐 수 있는
+            계기가 되었습니다.
           </p>
         </p>
         <div className="flex relative">
           <div className="absolute -left-[28rem] w-[70rem] md:min-h-[55rem] hidden md:block hover:z-20 brightness-75 hover:brightness-100">
-            <Image
-              src="/movie-finder/moviefinder-side2.png"
-              fill
-              alt="mine-main"
-            />
+            <Image src="/toyinmac/toy-main.png" fill alt="mine-main" />
           </div>
           <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 brightness-100">
-            <Image
-              src="/movie-finder/moviefinder-main.png"
-              fill
-              alt="mine-main"
-            />
+            <Image src="/toyinmac/toy-weather.png" fill alt="mine-main" />
           </div>
           <div className="absolute -right-[28rem] w-[70rem] md:min-h-[55rem] hidden brightness-75 md:block hover:z-20 hover:brightness-100">
-            <Image
-              src="/movie-finder/moviefinder-side1.png"
-              fill
-              alt="mine-main"
-            />
+            <Image src="/toyinmac/toy-calculator.png" fill alt="mine-main" />
           </div>
         </div>
-
+        <Link
+          href="https://toy-in-mac.vercel.app/"
+          target="_blank"
+          className="bg-black dark:bg-white w-40 text-white py-3 text-sm text-center self-center dark:text-black"
+        >
+          배포 사이트 바로가기
+        </Link>
         {/* Skills */}
         <div className="mt-7">
           <h2 className="font-semibold text-2xl mb-2">Skills</h2>
           <div className="h-24 flex space-x-4 items-end font-semibold">
-            <SkillsIcon skillName="React" />
-            <SkillsIcon skillName="Javascript" />
-            <SkillsIcon skillName="Styled-C" />
+            <SkillsIcon skillName="NextJS" />
+            <SkillsIcon skillName="Typescript" />
+            <SkillsIcon skillName="TailwindCSS" />
+            <SkillsIcon skillName="Zustand" />
           </div>
         </div>
         {/* 주요 기능 */}
@@ -109,7 +105,7 @@ const ToyInMac = () => {
         </div>
         <div className="mt-10 pb-10 md:mt-10">
           <Link
-            href="https://github.com/winternotseason/moviefinder/"
+            href="https://github.com/winternotseason/with-mac"
             target="_blank"
             className="bg-black dark:bg-white w-40 text-white py-3 px-4 text-sm text-center self-center dark:text-black"
           >
