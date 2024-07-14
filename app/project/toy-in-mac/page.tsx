@@ -24,7 +24,7 @@ const ToyInMac = () => {
             기능들을 익힐 수 있었습니다.
           </p>
           <p>
-            openweatherApi와의 통신을 통해 날씨 앱을 구현하였습니다. 그
+            OpenWeatherMap API와의 통신을 통해 날씨 앱을 구현하였습니다. 그
             과정속에서 데이터를 적절히 가공하는데 Promise.all과 같은 평소에 자주
             사용해보지 못했던 자바스크립트 함수를 다시 한번 확실히 익힐 수 있는
             계기가 되었습니다.
@@ -85,7 +85,7 @@ const ToyInMac = () => {
             </h3>
             <p className="mt-2">
               맥 OS의 기본 UI를 참고하여 바탕화면 디자인을 구현했습니다.
-              Next.js의 패러렐 라우트와 인터셉팅 라우트를 활용하여 아이콘을
+              Next.js의 Parallel Route와 Intercepting Route를 활용하여 아이콘을
               클릭하면 모달 창처럼 앱이 나타나는 방식으로 토이 프로젝트들을
               구성했습니다. 이 방식으로 날씨 앱과 계산기 앱을 여러 앱을 간편하게
               실행할 수 있도록 만들었습니다.
@@ -104,7 +104,7 @@ const ToyInMac = () => {
           <div className="mt-8">
             <h3 className="text-lg font-bold">⁃ 날씨 앱</h3>
             <p className="mt-2">
-              날씨 앱은 OpenWeather API를 사용하여 서울, 도쿄, 뉴욕, 런던, 파리
+              날씨 앱은 OpenWeatherMap API를 사용하여 서울, 도쿄, 뉴욕, 런던, 파리
               등 5개 도시의 실시간 날씨 정보를 제공합니다. 날씨에 맞는 배경
               화면을 표시하기 위해, axios를 활용해 여러 도시의 날씨 데이터를
               동시에 요청하고, Promise.all을 사용하여 한 번에 처리했습니다. 이를
