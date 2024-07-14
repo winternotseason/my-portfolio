@@ -30,17 +30,7 @@ const MovieFinder = () => {
           </p>
         </div>
         <div className="flex relative">
-          <div className="absolute -left-[28rem] w-[70rem] md:min-h-[55rem] hidden md:block hover:z-20 brightness-75 hover:brightness-100">
-            <Image
-              src="/movie-finder/moviefinder-side2.png"
-              fill
-              alt="mine-main"
-              quality={50}
-              sizes="100%"
-              priority
-            />
-          </div>
-          <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 brightness-100">
+          <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 ">
             <Image
               src="/movie-finder/moviefinder-main.png"
               fill
@@ -50,18 +40,7 @@ const MovieFinder = () => {
               priority
             />
           </div>
-          <div className="absolute -right-[28rem] w-[70rem] md:min-h-[55rem] hidden brightness-75 md:block hover:z-20 hover:brightness-100">
-            <Image
-              src="/movie-finder/moviefinder-side1.png"
-              fill
-              alt="mine-main"
-              quality={50}
-              sizes="100%"
-              priority
-            />
-          </div>
         </div>
-
         {/* Skills */}
         <div className="mt-7">
           <h2 className="font-semibold text-2xl mb-2">Skills</h2>
