@@ -10,7 +10,7 @@ const MovieFinder = () => {
         <h1 className="font-semibold text-3xl mt-10 pb-3 border-b-2">
           MOVIE FINDER - Find attractive movies!
         </h1>
-        <p className="my-4 space-y-3">
+        <div className="my-4 space-y-3">
           <p>
             TMDB Open API를 이용하여 개발한
             <span className="ml-1 font-semibold">
@@ -28,7 +28,7 @@ const MovieFinder = () => {
             받음으로써 HTTP 메서드에 대해 익힐 수 있었고, async/await 구문을
             사용하여 간결하고 효율적인 코드를 작성할 수 있었습니다.
           </p>
-        </p>
+        </div>
         <div className="flex relative">
           <div className="absolute -left-[28rem] w-[70rem] md:min-h-[55rem] hidden md:block hover:z-20 brightness-75 hover:brightness-100">
             <Image
@@ -42,6 +42,7 @@ const MovieFinder = () => {
               src="/movie-finder/moviefinder-main.png"
               fill
               alt="mine-main"
+              priority
             />
           </div>
           <div className="absolute -right-[28rem] w-[70rem] md:min-h-[55rem] hidden brightness-75 md:block hover:z-20 hover:brightness-100">

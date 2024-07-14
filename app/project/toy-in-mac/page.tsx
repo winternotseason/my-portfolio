@@ -10,7 +10,7 @@ const ToyInMac = () => {
         <h1 className="font-semibold text-3xl mt-10 pb-3 border-b-2">
           Toy IN mac OS
         </h1>
-        <p className="my-4 space-y-3">
+        <div className="my-4 space-y-3">
           <p>
             NextJS APP router 라우팅 시스템으로 개발한
             <span className="ml-1 font-semibold">
@@ -29,13 +29,13 @@ const ToyInMac = () => {
             사용해보지 못했던 자바스크립트 함수를 다시 한번 확실히 익힐 수 있는
             계기가 되었습니다.
           </p>
-        </p>
+        </div>
         <div className="flex relative">
           <div className="absolute -left-[28rem] w-[70rem] md:min-h-[55rem] hidden md:block hover:z-20 brightness-75 hover:brightness-100">
             <Image src="/toyinmac/toy-main.png" fill alt="mine-main" />
           </div>
           <div className="w-full aspect-[1/0.8] md:min-h-[55rem] relative z-10 brightness-100">
-            <Image src="/toyinmac/toy-weather.png" fill alt="mine-main" />
+            <Image src="/toyinmac/toy-weather.png" fill alt="mine-main" priority/>
           </div>
           <div className="absolute -right-[28rem] w-[70rem] md:min-h-[55rem] hidden brightness-75 md:block hover:z-20 hover:brightness-100">
             <Image src="/toyinmac/toy-calculator.png" fill alt="mine-main" />

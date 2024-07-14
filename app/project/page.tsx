@@ -14,7 +14,7 @@ const Project = () => {
           <div className="w-4/5">
             <div className="w-full aspect-[3/2.4] relative">
               <Link href="/project/mine">
-                <Image src="/MINE.png" fill alt="mine" />
+                <Image src="/MINE.png" fill alt="mine" sizes="100%" />
               </Link>
             </div>
             <div className="py-7">
@@ -36,7 +36,12 @@ const Project = () => {
           <div className="w-4/5 mt-4 md:mt-0">
             <div className="w-full aspect-[3/2.4] relative">
               <Link href="/project/moviefinder">
-                <Image src="/moviefinder.png" fill alt="mine" />
+                <Image
+                  src="/moviefinder.png"
+                  fill
+                  alt="moviefinder"
+                  sizes="100%"
+                />
               </Link>
             </div>
             <div className="py-7">
@@ -58,7 +63,7 @@ const Project = () => {
           <div className="w-4/5 mt-4 md:mt-0">
             <div className="w-full aspect-[3/2.4] relative">
               <Link href="/project/toy-in-mac">
-                <Image src="/TOYINMAC.png" fill alt="mine" />
+                <Image src="/TOYINMAC.png" fill alt="toyinmac" sizes="100%" />
               </Link>
             </div>
             <div className="py-7">

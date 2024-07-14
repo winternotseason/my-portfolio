@@ -8,7 +8,7 @@ const Mine = () => {
     <div className="w-full h-full flex justify-center animate-fade">
       <div className="md:mt-14 w-full max-w-[40rem] md:max-w-[70rem] pt-16 px-10 flex flex-col ">
         <h1 className="font-semibold text-3xl mt-10 pb-3 border-b-2">MINE</h1>
-        <p className="my-4 space-y-3">
+        <div className="my-4 space-y-3">
           <p>
             네이버 쇼핑 API를 이용하여{" "}
             <span className="font-semibold">
@@ -27,16 +27,16 @@ const Mine = () => {
             관리가 가능한 zustand를 이번 프로젝트에서 도입해보면서 빠르고
             간결하게 상태관리를 할 수 있었습니다.
           </p>
-        </p>
+        </div>
         <div className="flex relative">
           <div className="absolute -left-[28rem] w-[27rem] md:min-h-[55rem] hidden md:block">
-            <Image src="/mine/mine-mobile-1.png" fill alt="mine-main" />
+            <Image src="/mine/mine-mobile-1.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
           </div>
           <div className="w-full aspect-[2/1.7] md:min-h-[55rem] relative">
-            <Image src="/mine/mine-main.png" fill alt="mine-main" />
+            <Image src="/mine/mine-main.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
           </div>
           <div className="absolute -right-[28rem] w-[27rem] aspect-[2/1.7] md:min-h-[55rem] hidden md:block">
-            <Image src="/mine/mine-mobile-2.png" fill alt="mine-main" />
+            <Image src="/mine/mine-mobile-2.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
           </div>
         </div>
 
