@@ -49,8 +49,8 @@ export default function Home() {
               <div className="flex">
                 <SkillsIcon skillName="HTML" />
                 <SkillsIcon skillName="CSS" />
-                <SkillsIcon skillName="JS" />
-                <SkillsIcon skillName="TS" />
+                <SkillsIcon skillName="Javascript" />
+                <SkillsIcon skillName="Typescript" />
               </div>
               <div className="flex mt-2">
                 <SkillsIcon skillName="React" />
