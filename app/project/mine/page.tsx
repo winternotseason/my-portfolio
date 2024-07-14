@@ -7,7 +7,7 @@ const Mine = () => {
   return (
     <div className="w-full h-full flex justify-center animate-fade">
       <div className="md:mt-14 w-full max-w-[40rem] md:max-w-[70rem] pt-16 px-10 flex flex-col ">
-        <h1 className="font-semibold text-3xl mt-10">MINE</h1>
+        <h1 className="font-semibold text-3xl mt-10 pb-3 border-b-2">MINE</h1>
         <p className="my-4 space-y-3">
           <p>
             네이버 쇼핑 API를 이용하여{" "}
@@ -43,7 +43,7 @@ const Mine = () => {
         <Link
           href="https://mine-shopping.vercel.app/"
           target="_blank"
-          className="bg-black dark:bg-white w-40 text-white py-3 text-sm text-center self-center"
+          className="bg-black dark:bg-white w-40 text-white py-3 text-sm text-center self-center dark:text-black"
         >
           배포 사이트 바로가기
         </Link>
@@ -72,9 +72,9 @@ const Mine = () => {
                 회원가입 기능을 도입하기 위해 MongoDB 데이터베이스를
                 사용하였습니다. 별도의 서버 설정 없이 api/register/route.ts에
                 간편하게 API를 구축함으로써 개발 초기 설정 시간과 노력을 크게
-                절약할 수 있었습니다. 또 코드 변경 사항을 실시간으로 반영할 수
-                있어 빠른 피드백을 받을 수 있어 효울성과 생산성의 향상을 느낄 수
-                있었습니다.
+                절약할 수 있었습니다. <br /> 코드 변경 사항을 실시간으로 반영할
+                수 있어 빠른 피드백을 받을 수 있어 효울성과 생산성의 향상을 느낄
+                수 있었습니다.
               </p>
               <h3 className="mt-5 font-semibold">
                 2. Next-Auth 라이브러리를 사용한 회원 인증 기능
@@ -96,9 +96,10 @@ const Mine = () => {
             <p className="mt-2">
               검색 기능을 구현하기위해 네이버 검색 Open API를 사용하였습니다.
               실제 데이터와의 상호작용을 통해 RESTful API와 HTTP 메서드를 익힐
-              수 있었고, Postman 플랫폼으로 응답 데이터를 실시간으로 확인하여,
-              명확한 데이터 구조를 미리 파악하였습니다. 덕분에 프론트엔드
-              코드에서 가공해야할 부분을 빠르게 파악하여 수정할 수 있었습니다.
+              수 있었습니다. <br /> 또 Postman 플랫폼으로 응답 데이터를
+              실시간으로 확인하여, 명확한 데이터 구조를 미리 파악하였습니다.
+              덕분에 프론트엔드 코드에서 가공해야할 부분을 빠르게 파악하여
+              수정할 수 있었습니다.
             </p>
           </div>
         </div>
@@ -107,9 +108,10 @@ const Mine = () => {
           <p>
             ⁃ 로그인과 회원가입을 구현하는데 fetch 함수의 Pending 상태가 적지
             않은 시간을 할애하면서 사용자가 느끼기에 사이트가 멈춘 것 같은
-            느낌이 들었습니다. 해당 문제를 useFormStatus Hook을 통해 로딩 상태로
-            처리 해보면서 사용자 경험의 가치의 중요성을 다시한번 느낄 수 있었던
-            계기가 되었습니다.
+            느낌이 들었습니다. <br />
+            해당 문제를 useFormStatus Hook을 통해 로딩 상태로 처리 해보면서
+            사용자 경험의 가치의 중요성을 다시한번 느낄 수 있었던 계기가
+            되었습니다.
           </p>
           <p className="mt-4">
             ⁃ 서버 사이드 렌더링을 지원하는 Next.js 기반의 프로젝트를 개발하면서
@@ -122,7 +124,7 @@ const Mine = () => {
           <Link
             href="https://github.com/winternotseason/mine-shopping/"
             target="_blank"
-            className="bg-black dark:bg-white w-40 text-white py-3 px-4 text-sm text-center self-center"
+            className="bg-black dark:bg-white w-40 text-white py-3 px-4 text-sm text-center self-center dark:text-black"
           >
             Github
           </Link>

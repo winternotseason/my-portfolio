@@ -8,7 +8,6 @@ const Header = () => {
       <div className="gap-3 md:gap-10 font-medium flex text-sm md:text-lg">
         <NavLink href="/">About</NavLink>
         <NavLink href="/project">Project</NavLink>
-        <NavLink href="/board">Board</NavLink>
       </div>
     </header>
   );
