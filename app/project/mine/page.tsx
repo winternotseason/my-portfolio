@@ -30,13 +30,35 @@ const Mine = () => {
         </div>
         <div className="flex relative">
           <div className="absolute -left-[28rem] w-[27rem] md:min-h-[55rem] hidden md:block">
-            <Image src="/mine/mine-mobile-1.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
+            <Image
+              src="/mine/mine-mobile-1.png"
+              fill
+              alt="mine-main"
+              quality={50}
+              sizes="100%"
+              priority
+            />
           </div>
           <div className="w-full aspect-[2/1.7] md:min-h-[55rem] relative">
-            <Image src="/mine/mine-main.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
+            <Image
+              src="/mine/mine-main.png"
+              fill
+              alt="mine-main"
+              quality={50}
+              sizes="100%"
+              priority
+
+            />
           </div>
           <div className="absolute -right-[28rem] w-[27rem] aspect-[2/1.7] md:min-h-[55rem] hidden md:block">
-            <Image src="/mine/mine-mobile-2.png" fill alt="mine-main" quality={50} sizes="100%" priority/>
+            <Image
+              src="/mine/mine-mobile-2.png"
+              fill
+              alt="mine-main"
+              quality={50}
+              sizes="100%"
+              priority
+            />
           </div>
         </div>
 
