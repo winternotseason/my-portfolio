@@ -17,10 +17,10 @@ const Home = () => {
         <div className="flex justify-between flex-col px-7 lg:px-0 lg:flex-row">
           {/*메인 왼쪽 */}
           <div className="">
-            <div className="bg-gradient-to-b from-cyan-200 via-white to-white inline-block text-transparent bg-clip-text">
-              <p className="text-3xl lg:text-[5rem] font-bold">FRONTEND</p>
-              <p className="text-3xl lg:text-[5rem] font-bold ">DEVELOPER</p>
-              <p className="text-lg lg:text-3xl font-bold">HWANG SEOYEON</p>
+            <div className="bg-gradient-to-b from-cyan-200/70 via-white/70 to-white/50 inline-block text-transparent bg-clip-text">
+              <p className="text-5xl lg:text-[5rem] font-bold">FE</p>
+              <p className="text-5xl lg:text-[5rem] font-bold ">DEVELOPER.</p>
+              <p className="text-lg lg:text-3xl font-bold mt-2">HWANG SEOYEON</p>
             </div>
             <div className="flex flex-col space-y-2 lg:space-x-1 mt-4 lg:mt-10 text-sm  text-white/50">
               <div className="flex items-center justify-center w-20 text-xs border-[1px] rounded-3xl p-1 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
           </div>
           {/* 메인 오른쪽 */}
-          <div className="text-white lg:ml-20">
+          <div className="text-white/70 lg:ml-20">
             <p>안녕하세요.... 프론트엔드개발자...황서연입니다..</p>
           </div>
         </div>
