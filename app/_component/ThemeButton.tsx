@@ -9,7 +9,7 @@ export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex z-10 bg-white items-center justify-center fixed bottom-8 right-10 border-2 border-gray-100 w-14 h-14 shadow-lg rounded-full">
+    <div className="flex z-50 bg-white items-center justify-center fixed bottom-8 right-10 border-2 border-gray-100 w-14 h-14 shadow-lg rounded-full">
       <button
         onClick={() => {
           setTheme(theme === "dark" ? "light" : "dark");
