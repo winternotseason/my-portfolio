@@ -17,22 +17,21 @@ const Home = () => {
         <div className="flex justify-between flex-col px-7 lg:px-0 lg:flex-row">
           {/*메인 왼쪽 */}
           <div className="">
-            <div className="bg-gradient-to-b from-cyan-200/70 via-white/70 to-white/50 inline-block text-transparent bg-clip-text">
-              <p className="text-5xl lg:text-[5rem] font-bold">FE</p>
-              <p className="text-5xl lg:text-[5rem] font-bold ">DEVELOPER.</p>
-              <p className="text-lg lg:text-3xl font-bold mt-2">HWANG SEOYEON</p>
+            <div className="bg-gradient-to-b from-purple-300 to-white inline-block text-transparent bg-clip-text">
+              <p className="text-5xl lg:text-[5rem] font-bold">SEOYEON</p>
+              <p className="text-5xl lg:text-[5rem] font-bold ">PORTFOLIO</p>
             </div>
-            <div className="flex flex-col space-y-2 lg:space-x-1 mt-4 lg:mt-10 text-sm  text-white/50">
-              <div className="flex items-center justify-center w-20 text-xs border-[1px] rounded-3xl p-1 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
+            <div className="flex flex-col space-y-3 lg:space-x-1 mt-10 lg:mt-10 text-sm  text-white">
+              <div className="flex items-center justify-center w-32 text-xs border-[1px] rounded-3xl p-3 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
                 ABOUT ME
               </div>
-              <div className="flex items-center justify-center w-20 text-xs border-[1px] rounded-3xl p-1 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
+              <div className="flex items-center justify-center w-32 text-xs border-[1px] rounded-3xl p-3 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
                 PROJECT
               </div>
-              <div className="flex items-center justify-center w-20 text-xs border-[1px] rounded-3xl p-1 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
+              <div className="flex items-center justify-center w-32 text-xs border-[1px] rounded-3xl p-3 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
                 GITHUB
               </div>
-              <div className="flex items-center justify-center w-20 text-xs border-[1px]  rounded-3xl p-1 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
+              <div className="flex items-center justify-center w-32 text-xs border-[1px]  rounded-3xl p-3 lg:py-2 lg:px-4 cursor-pointer border-white/50 hover:border-white/80 hover:text-white/80">
                 BLOG
               </div>
             </div>
