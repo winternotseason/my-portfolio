@@ -15,7 +15,7 @@ const Project = () => {
         </h1>
         <div className="flex flex-col md:flex-row w-full items-center">
           <MineImages />
-          <div className="w-full md:w-1/2 text-xs md:text-base">
+          <div className="w-full md:w-1/2 text-xs md:text-base ml-4">
             <p className="pt-3">
               <span className="font-semibold">
                 전국 각지 음식점들의 리뷰를 공유하는 커뮤니티 사이트
@@ -50,7 +50,7 @@ const Project = () => {
             <p className="pt-2">
               <span className="font-semibold">개발인원</span> · 1명 (개인개발)
             </p>
-            <p className="pt-2 pb-3 md:pb-5">
+            <p className="pt-2 pb-5">
               <span className="font-semibold">Skills</span>· NextJS, Typescript,
               TailwindCSS, react-query, MongoDB
             </p>
