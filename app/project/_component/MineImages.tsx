@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import ToggleDevice from "./ToggleDevice";
 
 const MineImages = () => {
   const [index, setIndex] = useState(1);
-
+  const [isPhone, setIsPhone] = useState(false);
   const handleLeftClick = () => {
     setIndex(index - 1); // 왼쪽으로 300px 이동
   };
@@ -14,15 +15,26 @@ const MineImages = () => {
   };
 
   return (
-    <div className="flex w-full relative flex-col justify-center items-center">
-      <div className="max-w-[40rem] w-3/4 aspect-[3/2.7] relative">
-        <Image
-          src={`/new/mine/mine-pc-${index}.webp`}
-          alt="mine-pc"
-          fill
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
-          placeholder="blur"
-        />
+    <div className="flex w-full md:w-1/2 relative flex-col justify-between items-center h-96 md:h-[600px]">
+      <ToggleDevice isPhone={isPhone} setIsPhone={setIsPhone} />
+      <div className={`${isPhone ? 'aspect-[1/2] w-1/2' : 'aspect-[3/2.7] w-3/4'} relative`}>
+        {isPhone ? (
+          <Image
+            src={`/new/mine/mine-mobile-${index}.webp`}
+            alt="mine-pc"
+            fill
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+            placeholder="blur"
+          />
+        ) : (
+          <Image
+            src={`/new/mine/mine-pc-${index}.webp`}
+            alt="mine-pc"
+            fill
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+            placeholder="blur"
+          />
+        )}
       </div>
       <div className="w-full flex justify-center space-x-5">
         <button

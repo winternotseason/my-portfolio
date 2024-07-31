@@ -65,7 +65,7 @@ const Home = () => {
           </p>
         </div>
         {/* Certification */}
-        <div className="mt-10 flex flex-col items-start space-y-1 border-[1px] border-dotted p-3">
+        <div className="mt-7 flex flex-col items-start space-y-1 border-[1px] border-dotted p-3">
           <h1 className="font-medium md:font-semibold text-sm mb-2 md:mb-4 md:text-2xl">
             🪪 Certificate
           </h1>
