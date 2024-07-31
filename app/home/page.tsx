@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -130,7 +130,7 @@ const Home = () => {
           <p className="mb-2">- </p>
         </div>
       </div>
-      <Link href='/project' className="mt-4 hover:bg-black/60 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-lg text-sm">► PROJECT</Link>
+      <Link href='/project' className="mt-4 hover:bg-black/60 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-2xl text-xs">► PROJECT</Link>
     </div>
   );
 };

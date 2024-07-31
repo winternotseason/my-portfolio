@@ -29,34 +29,44 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
             About ME
           </Link>
           <hr />
-          <h1 className="font-semibold pt-2">PROJECTS</h1>
           <Link
             onClick={() => {
               setIsMenuOpen(false);
             }}
-            className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-            href="/"
+            href="/project"
+            className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 transition-colors duration-200"
           >
-            MINE
+            PROJECTS
           </Link>
-          <Link
-            onClick={() => {
-              setIsMenuOpen(false);
-            }}
-            className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-            href="/"
-          >
-            MOVIE FINDER
-          </Link>
-          <Link
-            onClick={() => {
-              setIsMenuOpen(false);
-            }}
-            className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-            href="/"
-          >
-            PORTFOLIO
-          </Link>
+          <div className="flex flex-col ml-8">
+            <Link
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              href="/"
+            >
+              MINE
+            </Link>
+            <Link
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              href="/"
+            >
+              MOVIE FINDER
+            </Link>
+            <Link
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              href="/"
+            >
+              PORTFOLIO
+            </Link>
+          </div>
         </div>
       </div>
     </>

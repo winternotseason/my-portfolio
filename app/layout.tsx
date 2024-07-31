@@ -6,7 +6,7 @@ import Provider from "./_component/Provider";
 import ThemeButton from "./_component/ThemeButton";
 
 const noto = Noto_Sans_KR({
-  weight: ["100", "300", "400", "700", "900"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
 });
 
