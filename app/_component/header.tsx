@@ -1,17 +1,41 @@
-import Link from "next/link";
-import NavLink from "./NavLink";
+"use client";
+
+import { useState } from "react";
+import ThemeButton from "./ThemeButton";
+
+const style =
+  "w-5 h-[2px] bg-black/70 rounded-xl transition-transform duration-300 ease-in-out";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <header className="fixed z-50 top-0 w-full  h-16 dark:bg-black flex justify-center items-center backdrop-blur-sm border-b-[1px] border-white/20">
+    <header className="fixed z-50 top-0 w-full  h-16 dark:bg-gray-700 flex justify-center items-center backdrop-blur-sm border-b-[1px] border-white/20">
       <div className="w-full flex justify-between items-center px-6 max-w-[70rem]">
-        <h1 className="text-white/60 text-lg font-bold cursor-default dark:text-indigo-500">
-          Seo&apos; Portfolio
+        <h1 className="text-lg font-bold cursor-default dark:text-indigo-500">
+          👩🏻‍💻 Portfolio
         </h1>
-        <div className="gap-3 md:gap-10 flex">
-          <NavLink href="/home">HOME</NavLink>
-          <NavLink href="/">ABOUT ME</NavLink>
-          <NavLink href="/project">PROJECT</NavLink>
+        {/* toggle DarkMode */}
+        <div className="flex space-x-3">
+          <ThemeButton />
+          {/* toggle SideMenu */}
+          <div
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+            className="flex flex-col space-y-2 cursor-pointer border-[1px] w-10 h-10 rounded-full p-1 items-center justify-center hover:bg-gray-200"
+          >
+            <span
+              className={`${style} ${
+                isMenuOpen && "translate-y-[5px] rotate-45"
+              }`}
+            />
+            <span
+              className={`${style} ${
+                isMenuOpen && "-translate-y-[5px] -rotate-45"
+              }`}
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -19,3 +43,4 @@ const Header = () => {
 };
 
 export default Header;
+//

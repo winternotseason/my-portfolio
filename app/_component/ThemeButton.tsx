@@ -1,36 +1,33 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Image from "next/image";
 
-import { useEffect, useState } from "react";
 
 export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex z-50 bg-white items-center justify-center fixed bottom-8 right-10 border-2 border-gray-100 w-14 h-14 shadow-lg rounded-full">
-      <button
-        onClick={() => {
-          setTheme(theme === "dark" ? "light" : "dark");
-        }}
+    <div
+      onClick={() => {
+        setTheme(theme === "dark" ? "light" : "dark");
+      }}
+      className="flex justify-center items-center w-10 h-10 border-[1px] rounded-full cursor-pointer hover:bg-gray-200 group"
+    >
+      {/* main circle */}
+      <div
+        className={`w-6 h-6 rounded-full bg-gradient-to-r ${
+          theme === "dark"
+            ? "from-red-600 to-orange-400"
+            : "from-purple-800 to-indigo-300"
+        }  relative`}
       >
-        {theme === "dark" ? (
-          <Image
-            src="/sun.svg"
-            width={30}
-            height={30}
-            alt="sun"
-          />
-        ) : (
-          <Image
-            src="/moon.svg"
-            width={30}
-            height={30}
-            alt="moon"
-          />
-        )}
-      </button>
+        {/* mini circle */}
+        <div
+          className={`absolute right-0 w-4 h-4 rounded-full bg-white group-hover:bg-gray-200 transition-transform duration-300 ${
+            theme === "dark" && "scale-0"
+          }`}
+        />
+      </div>
     </div>
   );
 }
