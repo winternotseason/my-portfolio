@@ -20,6 +20,8 @@ const MovieFinderImages = () => {
           src={`/new/moviefinder/moviefinder-pc-${index}.webp`}
           alt="moviefinder-pc"
           fill
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+          placeholder="blur"
         />
       </div>
       <div className="w-full flex justify-center space-x-5">

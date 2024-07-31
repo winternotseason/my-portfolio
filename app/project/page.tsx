@@ -28,7 +28,7 @@ const Project = () => {
           </p>
         </div>
         <Link
-          href="/home"
+          href="/project/mine"
           className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
         >
           ► DETAIL
@@ -41,7 +41,7 @@ const Project = () => {
         <div className="text-xs md:text-base">
           <p className="pt-3">
             <span className="font-semibold">
-              전국 각지 음식점들의 리뷰를 공유하는 커뮤니티 사이트
+              최신 영화 일간/주간 순위와 영화 검색 기능, 각 영화의 줄거리·등장인물·스틸컷 등 영화의 정보를 제공하는 사이트
             </span>
             입니다.
           </p>
@@ -53,7 +53,7 @@ const Project = () => {
           </p>
         </div>
         <Link
-          href="/home"
+          href="/project/moviefinder"
           className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
         >
           ► DETAIL

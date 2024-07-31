@@ -16,7 +16,13 @@ const MineImages = () => {
   return (
     <div className="flex w-full relative flex-col justify-center items-center">
       <div className="max-w-[40rem] w-3/4 aspect-[3/2.7] relative">
-        <Image src={`/new/mine/mine-pc-${index}.webp`} alt="mine-pc" fill />
+        <Image
+          src={`/new/mine/mine-pc-${index}.webp`}
+          alt="mine-pc"
+          fill
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
+          placeholder="blur"
+        />
       </div>
       <div className="w-full flex justify-center space-x-5">
         <button

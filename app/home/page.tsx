@@ -14,7 +14,7 @@ const Home = () => {
     <div className="flex flex-col px-4 pb-5">
       <div className="w-full justify-around flex flex-col font-light mt-5 md:mt-10">
         {/* 소개 */}
-        <div className="flex flex-col justify-center md:text-5xl md:mb-5">
+        <div className="flex flex-col justify-center md:text-5xl py-12 md:py-32 ">
           <p>안녕하세요.</p>
           <p>
             프론트엔드 개발자 <span className="font-semibold">황서연</span>
@@ -22,7 +22,7 @@ const Home = () => {
           </p>
         </div>
         {/* 깃허브, 이메일 아이콘 */}
-        <div className="flex items-center mt-5 space-x-4">
+        <div className="flex items-center space-x-4">
           <div className="group flex flex-col justify-center items-center w-16 h-16 md:w-24 md:h-24 rounded-xl bg-white shadow-md hover:bg-black/90 transition-colors duration-300 cursor-pointer">
             <svg
               className="group-hover:fill-white transition-colors duration-300 w-6 h-6 md:w-10 md:h-10"
@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
         {/* About me */}
-        <div className="mt-10 flex flex-col items-start space-y-1 border-[1px] border-dotted p-3">
+        <div className="mt-5 md:mt-10 flex flex-col items-start space-y-1 border-[1px] border-dotted p-3">
           <h1 className="font-medium md:font-semibold text-sm mb-2 md:mb-4 md:text-2xl">
             🔍 ABOUT ME
           </h1>
