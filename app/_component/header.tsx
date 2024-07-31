@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="fixed z-50 top-0 w-full  h-16 dark:bg-gray-700 flex justify-center items-center bg-primary">
       <div className="w-full flex justify-between items-center px-6 max-w-[70rem]">
-        <h1 className="text-lg font-bold cursor-default dark:text-indigo-500">
+        <h1 className="text-lg md:text-xl font-bold cursor-default dark:text-indigo-500">
           👩🏻‍💻 Portfolio
         </h1>
         {/* toggle DarkMode */}

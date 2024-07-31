@@ -32,7 +32,11 @@ export default function RootLayout({
       <body className={noto.className}>
         <Provider>
           <Header />
-          <div className="w-full h-full pt-[63px]">{children}</div>
+          <div className="flex justify-center">
+            <div className="w-full h-full pt-[63px] max-w-[70rem]">
+              {children}
+            </div>
+          </div>
         </Provider>
       </body>
     </html>
