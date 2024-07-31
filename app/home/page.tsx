@@ -11,7 +11,7 @@ const Home = () => {
     }, 6000);
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center px-4">
+    <div className="flex flex-col px-4">
       <div className="w-full justify-around flex flex-col md:flex-row font-light mt-5">
         {/* 소개 */}
         <div className="flex flex-col justify-center">
@@ -20,9 +20,8 @@ const Home = () => {
             프론트엔드 개발자 <span className="font-semibold">황서연</span>
             입니다.
           </p>
-          <p>제 포트폴리오 사이트에 방문해주셔서 감사합니다.</p>
         </div>
-        {/* 깃허브, 이메일 */}
+        {/* 깃허브, 이메일 아이콘 */}
         <div className="flex items-center mt-5 space-x-4">
           <div className="group flex flex-col justify-center items-center w-16 h-16 rounded-xl bg-white shadow-md hover:bg-black/90 transition-colors duration-300 cursor-pointer">
             <svg
@@ -52,6 +51,31 @@ const Home = () => {
               Email
             </p>
           </div>
+        </div>
+        {/* Introduce */}
+        <div className="mt-10 flex flex-col items-start space-y-1">
+          <h1 className="font-medium text-sm mb-2">ABOUT ME</h1>
+          <p className="text-xs">
+            <span className="font-medium">학력 · </span>인하대학교 경영학 /
+            산업경영공학 (3.91 / 4.5)
+          </p>
+          <p className="text-xs">
+            <span className="font-medium">생년월일 · </span>2001.11.27
+          </p>
+          <p className="text-xs">
+            <span className="font-medium">연락처 · </span>010-8477-8820
+          </p>
+        </div>
+        <div className="mt-7 text-xs">
+          <h1 className="font-medium text-sm mb-2">Introduce</h1>
+          <p>안녕하세요. 배움이라는 것에 끝이 있다고 생각하지 않고, 어떻게 하면 더 나은
+            사용자 경험을 창조할 수 있을지에 대해 생각하고 학습하는 프론트엔드 개발자 황서연입니다.
+          </p>
+          <p className="mt-2">학습하고 개발하는데에 있어서 프론트와 백의 구분을 두지 않고, 사용자 중심의 최적화와 혁신적인 개발을 통해
+            더 나은 사용자 경험을 제공하는 것이 제 목표입니다.
+          </p>
+        <p className="mt-2">쉽지 않은 개발의 길에서 함께 나아가고 싶은 개발자가 될 수 있도록 끊임없이 노력하겠습니다.</p>
+        <p className="mt-2">저를 보여드릴 수 있는 포트폴리오 사이트에 방문해주셔서 다시 한번 진심으로 감사드립니다!</p>
         </div>
       </div>
     </div>
