@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ThemeButton from "./ThemeButton";
+import SideMenu from "./SideMenu";
 
 const style =
   "w-5 h-[2px] bg-black/70 rounded-xl transition-transform duration-300 ease-in-out";
@@ -10,7 +11,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <header className="fixed z-50 top-0 w-full  h-16 dark:bg-gray-700 flex justify-center items-center backdrop-blur-sm border-b-[1px] border-white/20">
+    <header className="fixed z-50 top-0 w-full  h-16 dark:bg-gray-700 flex justify-center items-center bg-primary">
       <div className="w-full flex justify-between items-center px-6 max-w-[70rem]">
         <h1 className="text-lg font-bold cursor-default dark:text-indigo-500">
           👩🏻‍💻 Portfolio
@@ -38,6 +39,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <SideMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </header>
   );
 };

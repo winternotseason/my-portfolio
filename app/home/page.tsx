@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     }, 6000);
   }, []);
   return (
-    <div className="flex flex-col px-4">
+    <div className="flex flex-col px-4 pb-5">
       <div className="w-full justify-around flex flex-col  font-light mt-5">
         {/* 소개 */}
         <div className="flex flex-col justify-center">
@@ -88,6 +89,7 @@ const Home = () => {
             진심으로 감사드립니다!
           </p>
         </div>
+        {/* Skills */}
         <div className="mt-7 text-xs border-[1px] border-dotted p-3">
           <h1 className="font-medium text-sm mb-2">📓 Skills</h1>
           <p className="font-medium mb-2">- HTML, CSS, Javascript</p>
@@ -128,6 +130,7 @@ const Home = () => {
           <p className="mb-2">- </p>
         </div>
       </div>
+      <Link href='/project' className="mt-4 hover:bg-black/60 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-lg text-sm">► PROJECT</Link>
     </div>
   );
 };

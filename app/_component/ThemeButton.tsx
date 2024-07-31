@@ -23,7 +23,7 @@ export default function ThemeButton() {
       >
         {/* mini circle */}
         <div
-          className={`absolute right-0 w-4 h-4 rounded-full bg-white group-hover:bg-gray-200 transition-transform duration-300 ${
+          className={`absolute right-0 w-4 h-4 rounded-full bg-primary group-hover:bg-gray-200 transition-transform duration-300 ${
             theme === "dark" && "scale-0"
           }`}
         />
