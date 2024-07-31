@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
   return (
     <div className="flex flex-col px-4">
-      <div className="w-full justify-around flex flex-col md:flex-row font-light mt-5">
+      <div className="w-full justify-around flex flex-col  font-light mt-5">
         {/* 소개 */}
         <div className="flex flex-col justify-center">
           <p>안녕하세요.</p>
@@ -52,9 +52,9 @@ const Home = () => {
             </p>
           </div>
         </div>
-        {/* Introduce */}
-        <div className="mt-10 flex flex-col items-start space-y-1">
-          <h1 className="font-medium text-sm mb-2">ABOUT ME</h1>
+        {/* About me */}
+        <div className="mt-10 flex flex-col items-start space-y-1 border-[1px] border-dotted p-3">
+          <h1 className="font-medium text-sm mb-2">🔍 ABOUT ME</h1>
           <p className="text-xs">
             <span className="font-medium">학력 · </span>인하대학교 경영학 /
             산업경영공학 (3.91 / 4.5)
@@ -66,16 +66,66 @@ const Home = () => {
             <span className="font-medium">연락처 · </span>010-8477-8820
           </p>
         </div>
-        <div className="mt-7 text-xs">
-          <h1 className="font-medium text-sm mb-2">Introduce</h1>
-          <p>안녕하세요. 배움이라는 것에 끝이 있다고 생각하지 않고, 어떻게 하면 더 나은
-            사용자 경험을 창조할 수 있을지에 대해 생각하고 학습하는 프론트엔드 개발자 황서연입니다.
+        {/* Introduce */}
+        <div className="mt-7 text-xs border-[1px] border-dotted p-3">
+          <h1 className="font-medium text-sm mb-2">☑️ Introduce</h1>
+          <p>
+            안녕하세요. 배움이라는 것에 끝이 있다고 생각하지 않고, 어떻게 하면
+            더 나은 사용자 경험을 창조할 수 있을지에 대해 생각하고 학습하는
+            프론트엔드 개발자 황서연입니다.
           </p>
-          <p className="mt-2">학습하고 개발하는데에 있어서 프론트와 백의 구분을 두지 않고, 사용자 중심의 최적화와 혁신적인 개발을 통해
-            더 나은 사용자 경험을 제공하는 것이 제 목표입니다.
+          <p className="mt-2">
+            학습하고 개발하는데에 있어서 프론트와 백의 구분을 두지 않고, 사용자
+            중심의 최적화와 혁신적인 개발을 통해 더 나은 사용자 경험을 제공하는
+            것이 제 목표입니다.
           </p>
-        <p className="mt-2">쉽지 않은 개발의 길에서 함께 나아가고 싶은 개발자가 될 수 있도록 끊임없이 노력하겠습니다.</p>
-        <p className="mt-2">저를 보여드릴 수 있는 포트폴리오 사이트에 방문해주셔서 다시 한번 진심으로 감사드립니다!</p>
+          <p className="mt-2">
+            쉽지 않은 개발의 길에서 함께 나아가고 싶은 개발자가 될 수 있도록
+            끊임없이 노력하겠습니다.
+          </p>
+          <p className="mt-2">
+            저를 보여드릴 수 있는 포트폴리오 사이트에 방문해주셔서 다시 한번
+            진심으로 감사드립니다!
+          </p>
+        </div>
+        <div className="mt-7 text-xs border-[1px] border-dotted p-3">
+          <h1 className="font-medium text-sm mb-2">📓 Skills</h1>
+          <p className="font-medium mb-2">- HTML, CSS, Javascript</p>
+          <p className="mb-1">
+            1. 기본적인 JS문법 뿐만 아니라 화살표 함수, 템플릿 리터럴,
+            구조분해할당과 같은 ES6 문법을 잘 숙지하고 활용할 수 있습니다.
+          </p>
+          <p className="mb-1">
+            2. Promise를 기반으로 동작하는 async/await 패턴을 효과적으로
+            활용하여 가독정 좋은 비동기 처리를 할 수 있습니다.
+          </p>
+          <p className="mb-2">
+            3. REST API를 통한 HTTP 요청을 잘 이해하고 있으며, API 서버와
+            효과적으로 연동할 수 있습니다.
+          </p>
+          <p className="font-medium mb-2">- React, Next.JS</p>
+          <p className="mb-1">
+            1. 리액트의 핵심인 SPA의 개념을 잘 이해하고 있으며,
+          </p>
+          <p className="mb-1">
+            2. SEO 최적화라는 큰 강점을 활용하기 위해 Next.JS로 ..
+          </p>
+          <p className="mb-2">3. Next.JS Api route...</p>
+          <p className="font-medium mb-2">- Tanstack react-query, Zustand</p>
+          <p className="mb-1">
+            1. 리액트의 핵심인 SPA의 개념을 잘 이해하고 있으며,
+          </p>
+          <p className="mb-2">
+            2. SEO 최적화라는 큰 강점을 활용하기 위해 Next.JS로 ..
+          </p>
+          <p className="font-medium mb-2">- MongoDB</p>
+          <p className="mb-1">
+            1. 리액트의 핵심인 SPA의 개념을 잘 이해하고 있으며,
+          </p>
+          <p className="mb-1">
+            2. SEO 최적화라는 큰 강점을 활용하기 위해 Next.JS로 ..
+          </p>
+          <p className="mb-2">- </p>
         </div>
       </div>
     </div>
