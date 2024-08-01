@@ -4,17 +4,17 @@ import MineImages from "./MineImages";
 
 const MineInfo = () => {
   return (
-    <div className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-3 md:p-5 md:py-10 overflow-hidden">
+    <div className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-5">
       <h1 className="text-base md:text-4xl font-extrabold mb-2 md:mb-4 text-center">
         <span className="text-green-500">#</span>MINE
       </h1>
-      <div className="flex flex-col md:flex-row w-full items-center">
+      <div className="flex flex-col md:flex-row items-center ">
         <MineImages />
-        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base ml-10">
+        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base md:ml-10">
           <p className="pt-2  text-base md:text-lg">
             <span className="font-semibold">프로젝트명</span> · #MINE
           </p>
-          <p className="mt-2 mb-3 ">
+          <p className="mt-2 mb-3">
             <span className="font-semibold text-green-600">
               나만 알고 싶지 않은 맛집들을 공유
             </span>
@@ -29,11 +29,10 @@ const MineInfo = () => {
             <br />
           </p>{" "}
           <p className="mb-3">
-            Auth.js 라이브러리를 활용하여{" "}
-            <strong>회원 기능을 구현</strong>
+            Auth.js 라이브러리를 활용하여 <strong>회원 기능을 구현</strong>
             하였고, 리뷰를 작성할 때 해당 음식점의 위치 또한 공유할 수 있도록{" "}
-            <strong>카카오 맵 API</strong>를 활용하여
-            사용자들이 정확한 위치를 알고 방문할 수 있도록 구현하였습니다.
+            <strong>카카오 맵 API</strong>를 활용하여 사용자들이 정확한 위치를
+            알고 방문할 수 있도록 구현하였습니다.
             <br />
           </p>{" "}
           <p className="mb-3">
@@ -51,10 +50,8 @@ const MineInfo = () => {
           <p className="mb-3">
             NextJS의 API Routes 기능을 활용하면서 글쓰기, 페이지네이션을 통한 글
             목록 불러오기, 해당 지역에 맞는 리뷰 불러오기 등{" "}
-            <strong>
-              API 엔드포인트를 직접 구축해보는 경험
-            </strong>
-            을 하게 되었습니다. 이러한 경험을 바탕으로{" "}
+            <strong>API 엔드포인트를 직접 구축해보는 경험</strong>을 하게
+            되었습니다. 이러한 경험을 바탕으로{" "}
             <strong>
               클라이언트와 서버 간 데이터의 흐름을 전체적으로 이해
             </strong>

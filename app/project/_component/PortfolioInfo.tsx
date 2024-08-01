@@ -6,14 +6,14 @@ const PortfolioInfo = () => {
   return (
     <div
       id="portfolio"
-      className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-3 md:p-5 md:py-10 overflow-hidden"
+      className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-5"
     >
       <h1 className="text-base md:text-4xl font-extrabold mb-2 md:mb-4 text-center">
         👩🏻‍💻 Portfolio
       </h1>
       <div className="flex flex-col md:flex-row w-full items-center">
         <PortfolioImages />
-        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base ml-10">
+        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base md:ml-10">
           <p className="pt-2  text-base md:text-lg">
             <span className="font-semibold">프로젝트명</span> · Seoyeon&apos;s
             Portfolio
@@ -66,7 +66,7 @@ const PortfolioInfo = () => {
             <Link
               href="https://seoyeon-portfolio.vercel.app/"
               target="_blank"
-              className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-3 md:px-5"
+              className="dark:bg-white dark:text-black md:mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-3 md:px-5"
             >
               ► 배포사이트
             </Link>

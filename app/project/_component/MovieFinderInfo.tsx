@@ -4,13 +4,13 @@ import MovieFinderImages from "./MovieFinderImages";
 
 const MovieFinderInfo = () => {
   return (
-    <div className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-3 md:p-5 md:py-10 overflow-hidden">
+    <div className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-5">
       <h1 className="text-base md:text-4xl font-extrabold mb-2 md:mb-4 text-center">
         MOVIEFINDER
       </h1>
       <div className="flex flex-col md:flex-row w-full items-center">
         <MovieFinderImages />
-        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base ml-10">
+        <div className="w-full mt-5 md:mt-0 md:w-1/2 text-xs md:text-base md:ml-10">
           <p className="pt-2  text-base md:text-lg">
             <span className="font-semibold">프로젝트명</span> · MOVIEFINDER
           </p>

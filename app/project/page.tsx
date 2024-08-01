@@ -6,14 +6,13 @@ import PortfolioInfo from "./_component/PortfolioInfo";
 
 const Project = () => {
   return (
-    <div className="w-full h-full px-4 pt-2 md:px-10 md:py-7">
-      <p className="mt-5 font-light text-sm md:text-xl">📑 PROJECTS</p>
+    <div className="w-full h-full px-4 pb-4 md:px-10 md:py-7">
       {/* mine */}
       <MineInfo />
       {/* moviefinder */}
       <MovieFinderInfo />
       {/* Portfolio */}
-    
+
       <PortfolioInfo />
     </div>
   );
