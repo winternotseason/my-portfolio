@@ -8,15 +8,15 @@ const Mine = () => {
     <div className="w-full h-full flex justify-center flex-col pt-4 pb-10 px-6">
       {/* intro */}
       <h1 className="text-base md:text-4xl font-extrabold mb-2 md:mb-4 text-center">
-        <span className="text-green-500">#</span>MINE
+        MOVIEFINDER
       </h1>
       <p className="text-base md:text-2xl font-medium md:font-semibold pb-5">
         ► 배포 URL <br />
         <Link
           className="pl-5 mt-3 text-sm md:text-base "
-          href="https://mine-community-w.vercel.app"
+          href="https://moviefinder-lilac.vercel.app"
         >
-          https://mine-community-w.vercel.app
+          https://moviefinder-lilac.vercel.app
         </Link>
       </p>
       <hr />
@@ -27,17 +27,10 @@ const Mine = () => {
             ⚒️ Skills
           </h3>
           <p>
-            <strong>- Frontend. </strong> NextJS, Typescript, react-query,
-            zustand
-          </p>
-          <p>
-            <strong>- Backend. </strong> NextJS
+            <strong>- Frontend. </strong> React(Vite), Javascript, zustand
           </p>
           <p>
             <strong>- Styling. </strong>Tailwind CSS
-          </p>
-          <p>
-            <strong>- Database. </strong>MongoDB
           </p>
           <p>
             <strong>- Deployment. </strong> Vercel
@@ -92,27 +85,27 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold">
             🚨 Challenges
           </h3>
-          <p className="font-semibold mt-2">· 첫 react-query 도입의 어려움</p>
-          <p className="text-xs md:text-base font-light md:font-normal mt-2">
+          <p className="font-semibold mt-2">- 첫 react-query 도입의 어려움</p>
+          <p className="pl-4">
             - 서버 상태와 클라이언트 상태를 명확히 구분하기 위해 리액트 쿼리를
             도입하였습니다. 자주 사용되는 개념들(InfinityQuery, useMutaion,
             useQuery...) 위주로 학습하여 적용해보았고, 나아가 사용자의 경험을 더
             높일 수 있는 react-query의 세부적인 기능 학습의 필요성을 느꼈습니다.
           </p>
           <p className="font-semibold mt-2">
-            · 작성된 글 배열 데이터를 가져오기 위해 MongoDB의 find 메서드 호출
+            - 작성된 글 배열 데이터를 가져오기 위해 MongoDB의 find 메서드 호출
             시 겪었던 오류
           </p>
-          <p className="text-xs md:text-base font-light md:font-normal mt-2">
+          <p className="pl-4">
             - MongoDB의 find 메서드는 배열 자체가 아닌 cursor를 return 하므로
             toArray() 메서드를 사용하여 배열 형태로 변환하고 응답 데이터를
             보냄으로써 문제를 해결하였습니다.
           </p>
           <p className="font-semibold mt-2">
-            · 글 작성 시 POST된 이미지를 cloudinary의 이미지 URL로 변환 후
+            - 글 작성 시 POST된 이미지를 cloudinary의 이미지 URL로 변환 후
             next/image로 해당 이미지 URL을 src 속성으로 사용할 때 오류
           </p>
-          <p className="text-xs md:text-base font-light md:font-normal mt-2">
+          <p className="pl-4">
             - next/image로 외부 경로의 이미지를 불러올 때에는 hostname 설정이
             필요하므로 next.config.mjs에서 cloudinary의 URL을 hostname으로 별도
             설정 해줌으로써 문제를 해결하였습니다.

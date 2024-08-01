@@ -3,15 +3,15 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ToggleDevice from "./ToggleDevice";
 
-const MineImages = () => {
+const PortfolioImages = () => {
   const [index, setIndex] = useState(1);
   const [isPhone, setIsPhone] = useState(false);
   const handleLeftClick = () => {
-    setIndex(index - 1);
+    setIndex(index - 1); 
   };
 
   const handleRightClick = () => {
-    setIndex(index + 1);
+    setIndex(index + 1); 
   };
 
   return (
@@ -19,15 +19,15 @@ const MineImages = () => {
       <div className="flex w-full md:w-1/2 relative flex-col justify-between items-center h-[30rem] md:h-[600px]">
         <ToggleDevice isPhone={isPhone} setIsPhone={setIsPhone} />
         <div
-              className={`${
-                isPhone
-                  ? "aspect-[1/1.8] w-1/2 max-w-[14rem] md:min-w-[10rem]"
-                  : "aspect-[1.2/1] w-full"
-              } relative border-[1px] border-dotted`}
+           className={`${
+            isPhone
+              ? "aspect-[1/1.8] w-1/2 max-w-[14rem] md:min-w-[10rem]"
+              : "aspect-[1.2/1] w-full"
+          } relative border-[1px] border-dotted`}
         >
           {isPhone ? (
             <Image
-              src={`/mine/mine-mobile-${index}.webp`}
+              src={`/portfolio/portfolio-mobile-${index}.webp`}
               alt="mine-pc"
               fill
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
@@ -35,7 +35,7 @@ const MineImages = () => {
             />
           ) : (
             <Image
-              src={`/mine/mine-pc-${index}.webp`}
+              src={`/portfolio/portfolio-pc-${index}.webp`}
               alt="mine-pc"
               fill
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
@@ -64,4 +64,4 @@ const MineImages = () => {
   );
 };
 
-export default MineImages;
+export default PortfolioImages;

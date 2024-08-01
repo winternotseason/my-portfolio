@@ -28,17 +28,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <Provider>
-        <body className={`${noto.className} bg-primary dark:bg-black transition-colors duration-200`}>
+    <html lang="ko">
+      <body
+        className={`${noto.className} bg-primary dark:bg-black transition-colors duration-200`}
+      >
+        <Provider>
           <Header />
           <div className="flex justify-center">
-            <div className="w-full h-full pt-[63px] max-w-[70rem]">
+            <div className="w-full h-full pt-[63px] max-w-[90rem]">
               {children}
             </div>
           </div>
-        </body>{" "}
-      </Provider>
+        </Provider>
+      </body>
     </html>
   );
 }

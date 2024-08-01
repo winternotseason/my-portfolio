@@ -23,7 +23,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
             onClick={() => {
               setIsMenuOpen(false);
             }}
-            href="/home"
+            href="/"
             className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
           >
             About ME
@@ -53,7 +53,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                 setIsMenuOpen(false);
               }}
               className="p-3 rounded-lg hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
-              href="/"
+              href="/project/moviefinder"
             >
               MOVIE FINDER
             </Link>
@@ -62,7 +62,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
                 setIsMenuOpen(false);
               }}
               className="p-3 rounded-lg hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
-              href="/"
+              href="/project#portfolio"
             >
               PORTFOLIO
             </Link>
