@@ -5,9 +5,7 @@ import MovieFinderImages from "./_component/MovieFinderImages";
 const Project = () => {
   return (
     <div className="w-full h-full px-4 pt-2 md:px-10 md:py-7">
-      <p className="mt-5 font-light text-sm md:text-xl">
-        📑 PROJECTS
-      </p>
+      <p className="mt-5 font-light text-sm md:text-xl">📑 PROJECTS</p>
       {/* mine */}
       <div className="mt-8 flex flex-col space-y-1 border-[1px] border-dotted p-3 md:p-5 md:py-10 overflow-hidden">
         <h1 className="text-base md:text-4xl font-extrabold mb-2 md:mb-4 text-center">
@@ -16,7 +14,13 @@ const Project = () => {
         <div className="flex flex-col md:flex-row w-full items-center">
           <MineImages />
           <div className="w-full mt-5 md:mt-0md:w-1/2 text-sm md:text-base ml-4">
-            <p className="mt-2 mb-3 md:text-lg text-base">
+            <p className="pt-2">
+              <span className="font-semibold text-base md:text-lg">
+                프로젝트명
+              </span>{" "}
+              · #MINE
+            </p>
+            <p className="mt-2 mb-3 ">
               <span className="font-semibold text-green-600">
                 나만 알고 싶지 않은 맛집들을 공유
               </span>
@@ -85,14 +89,14 @@ const Project = () => {
             <div className="space-x-4">
               <Link
                 href="/project/mine"
-                className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-2 md:px-3"
+                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
               >
                 ► README
               </Link>
               <Link
                 href="https://mine-community-w.vercel.app/"
                 target="_blank"
-                className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-2 md:px-3"
+                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
               >
                 ► 배포사이트
               </Link>

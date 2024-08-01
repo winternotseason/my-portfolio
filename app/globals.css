@@ -11,9 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  background-color: #FAFAFA;
-}
+
 
 ::-webkit-scrollbar {
   display: none;

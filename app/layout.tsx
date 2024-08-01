@@ -6,7 +6,7 @@ import Provider from "./_component/Provider";
 import ThemeButton from "./_component/ThemeButton";
 
 const noto = Noto_Sans_KR({
-  weight: ["100", "300", "400", "500", "700", "800","900"],
+  weight: ["100", "300", "400", "500", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -29,16 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={noto.className}>
-        <Provider>
+      <Provider>
+        <body className={`${noto.className} bg-primary dark:bg-black transition-colors duration-200`}>
           <Header />
           <div className="flex justify-center">
             <div className="w-full h-full pt-[63px] max-w-[70rem]">
               {children}
             </div>
           </div>
-        </Provider>
-      </body>
+        </body>{" "}
+      </Provider>
     </html>
   );
 }

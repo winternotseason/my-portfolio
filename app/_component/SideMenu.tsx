@@ -14,7 +14,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
         <div className="fixed top-[63px] left-0 w-screen h-screen bg-black/20 z-40" />
       )}
       <div
-        className={`p-6  fixed z-50 w-full md:w-1/2 right-0 top-[63px] h-screen bg-primary transition-transform duration-300 ease-in-out ${
+        className={`p-6  fixed z-50 w-full md:w-1/2 right-0 top-[63px] h-screen bg-primary dark:bg-black transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -24,7 +24,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
               setIsMenuOpen(false);
             }}
             href="/home"
-            className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 transition-colors duration-200"
+            className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
           >
             About ME
           </Link>
@@ -34,7 +34,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
               setIsMenuOpen(false);
             }}
             href="/project"
-            className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 transition-colors duration-200"
+            className="w-full rounded-lg font-semibold p-3 hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
           >
             PROJECTS
           </Link>
@@ -43,8 +43,8 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
-              href="/"
+              className="p-3 rounded-lg hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
+              href="/project/mine"
             >
               MINE
             </Link>
@@ -52,7 +52,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              className="p-3 rounded-lg hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
               href="/"
             >
               MOVIE FINDER
@@ -61,7 +61,7 @@ const SideMenu = ({ isMenuOpen, setIsMenuOpen }: Props) => {
               onClick={() => {
                 setIsMenuOpen(false);
               }}
-              className="p-3 rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              className="p-3 rounded-lg hover:bg-gray-200 dark:hover:text-black transition-colors duration-200"
               href="/"
             >
               PORTFOLIO
