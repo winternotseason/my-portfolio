@@ -26,22 +26,24 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold mb-2">
             ⚒️ Skills
           </h3>
-          <p>
-            <strong>- Frontend. </strong> NextJS, Typescript, react-query,
-            zustand
-          </p>
-          <p>
-            <strong>- Backend. </strong> NextJS
-          </p>
-          <p>
-            <strong>- Styling. </strong>Tailwind CSS
-          </p>
-          <p>
-            <strong>- Database. </strong>MongoDB
-          </p>
-          <p>
-            <strong>- Deployment. </strong> Vercel
-          </p>
+          <div className="text-xs md:text-base pl-4 font-light md:font-normal mt-1">
+            <p>
+              <strong>- Frontend. </strong> NextJS, Typescript, react-query,
+              zustand
+            </p>
+            <p>
+              <strong>- Backend. </strong> NextJS
+            </p>
+            <p>
+              <strong>- Styling. </strong>Tailwind CSS
+            </p>
+            <p>
+              <strong>- Database. </strong>MongoDB
+            </p>
+            <p>
+              <strong>- Deployment. </strong> Vercel
+            </p>
+          </div>
         </div>
 
         {/* 기능 */}
@@ -123,17 +125,21 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold">
             🏁 After Working
           </h3>
-          <p className="text-xs md:text-base font-light md:font-normal mt-2">
-            NextJS의 API Routes 기능을 활용하면서 글쓰기, 인피니트 스크롤링을
-            활용한 글 목록 불러오기, 해당 지역에 맞는 리뷰 불러오기 등 API
-            엔드포인트를 직접 구축해보는 경험을 하게 되었습니다. 이러한 경험을
-            바탕으로 클라이언트와 서버 간 데이터의 흐름을 전체적으로 이해하는 데
-            큰 도움이 되었습니다. 또 react-query를 도입하여 서버 상태와
-            클라이언트 상태를 분리하여 관리함으로써 직관적이고 효율적인 서버측
-            데이터 관리가 가능하였고, 해당 라이브러리의 큰 장점인 캐싱 기능을
-            느껴보면서 불필요한 페칭을 줄이며 react-query의 이점을 실감할 수
-            있었습니다.
-          </p>
+          <div className="text-xs md:text-base font-light md:font-normal mt-2">
+            <p>
+              NextJS의 API Routes 기능을 활용하면서 글쓰기, 인피니트 스크롤링을
+              활용한 글 목록 불러오기, 해당 지역에 맞는 리뷰 불러오기 등 API
+              엔드포인트를 직접 구축해보는 경험을 하게 되었습니다.
+            </p>
+            <p className="my-1">
+              이러한 경험을 바탕으로 클라이언트와 서버 간 데이터의 흐름을
+              전체적으로 이해하는 데 큰 도움이 되었습니다.
+            </p>
+            <p>또 react-query를 도입하여 서버 상태와 클라이언트 상태를
+            분리하여 관리함으로써 직관적이고 효율적인 서버측 데이터 관리가
+            가능하였고, 해당 라이브러리의 큰 장점인 캐싱 기능을 느껴보면서
+            불필요한 페칭을 줄이며 react-query의 이점을 실감할 수 있었습니다.</p>
+          </div>
         </div>
       </div>
     </div>

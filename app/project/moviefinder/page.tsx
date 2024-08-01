@@ -26,15 +26,17 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold mb-2">
             ⚒️ Skills
           </h3>
-          <p>
-            <strong>- Frontend. </strong> React, Javascript
-          </p>
-          <p>
-            <strong>- Styling. </strong>Tailwind CSS
-          </p>
-          <p>
-            <strong>- Deployment. </strong> Vercel
-          </p>
+          <div className="text-xs md:text-base pl-4 font-light md:font-normal mt-1">
+            <p>
+              <strong>- Frontend. </strong> React, Javascript
+            </p>
+            <p>
+              <strong>- Styling. </strong>Tailwind CSS
+            </p>
+            <p>
+              <strong>- Deployment. </strong> Vercel
+            </p>
+          </div>
         </div>
 
         {/* 기능 */}
@@ -71,11 +73,11 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold">
             🚨 Challenges
           </h3>
-          <p className="font-semibold mt-2">- 필요한 데이터의 부재</p>
+          <p className="font-semibold mt-2">· 필요한 데이터의 부재</p>
           <p className="text-xs md:text-base pl-4 font-light md:font-normal mt-1">
             - KOBIS API 데이터는 영화 차트에 관련된 데이터만 존재하였고, KMDB
             API 데이터는 영화 차트에 관한 데이터가 없는 대신, 세부 영화 정보에
-            관한 데이터들이 충분하였습니다. 그래서 두 API의 데이터를 조합하여
+            관한 데이터들이 충분하였습니다. <br/>그래서 두 API의 데이터를 조합하여
             사용해야 했는데, 이를 위해 KOBIS API에서 영화 차트 데이터를 가져온
             후, 해당 영화의 상세 정보를 KMDB API에서 추가로 조회하는 방식으로
             구현하여 원하는 기능을 구현할 수 있었습니다.
@@ -86,13 +88,19 @@ const Mine = () => {
           <h3 className="text-base md:text-2xl font-medium md:font-semibold">
             🏁 After Working
           </h3>
-          <p className="text-xs md:text-base font-light md:font-normal mt-2">
-            이번 프로젝트에서 Vite를 사용하여 빌드 속도가 크게 향상되어 개발
-            환경이 눈에 띄게 빨라졌음을 느꼈습니다. 또한, 다양한 API
-            데이터를 조작하여 프론트엔드 프로젝트에 적용할 수 있었던 경험이 매우
-            뿌듯했습니다. 이 과정을 통해 데이터 처리와 통합의 중요성을 깨닫게
-            되었습니다.
-          </p>
+          <div className="text-xs md:text-base font-light md:font-normal mt-2">
+            <p>
+              이번 프로젝트에서 Vite를 사용하여 빌드 속도가 크게 향상되어 개발
+              환경이 눈에 띄게 빨라졌음을 느꼈습니다.{" "}
+            </p>
+            <p className="my-1">
+              또한, 다양한 API 데이터를 조작하여 프론트엔드 프로젝트에 적용할 수
+              있었던 경험이 매우 뿌듯했습니다.
+            </p>
+            <p>
+              이 과정을 통해 데이터 처리와 통합의 중요성을 깨닫게 되었습니다.
+            </p>
+          </div>
         </div>
       </div>
     </div>
