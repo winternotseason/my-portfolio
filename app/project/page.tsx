@@ -13,12 +13,9 @@ const Project = () => {
         </h1>
         <div className="flex flex-col md:flex-row w-full items-center">
           <MineImages />
-          <div className="w-full mt-5 md:mt-0md:w-1/2 text-sm md:text-base ml-4">
-            <p className="pt-2">
-              <span className="font-semibold text-base md:text-lg">
-                프로젝트명
-              </span>{" "}
-              · #MINE
+          <div className="w-full mt-5 md:mt-0md:w-1/2 text-xs md:text-base ml-4">
+            <p className="pt-2  text-base md:text-lg">
+              <span className="font-semibold">프로젝트명</span> · #MINE
             </p>
             <p className="mt-2 mb-3 ">
               <span className="font-semibold text-green-600">
@@ -82,21 +79,30 @@ const Project = () => {
             <p className="pt-2">
               <span className="font-semibold">개발인원</span> · 1명 (개인개발)
             </p>
-            <p className="pt-2 pb-5">
+            <p className="pt-2">
               <span className="font-semibold">Skills</span>· NextJS, Typescript,
               TailwindCSS, react-query, MongoDB
+            </p>
+            <p className="pt-2 pb-8">
+              <span className="font-semibold">Github</span> ·{" "}
+              <Link
+                href="https://github.com/winternotseason/mine"
+                target="_blank"
+              >
+                github.com/winternotseason/mine
+              </Link>
             </p>
             <div className="space-x-4">
               <Link
                 href="/project/mine"
-                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
+                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-3 md:px-5"
               >
-                ► README
+                ► DETAIL
               </Link>
               <Link
                 href="https://mine-community-w.vercel.app/"
                 target="_blank"
-                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
+                className="dark:bg-white dark:text-black mt-4 hover:bg-black/60 dark:hover:bg-white/80 transition-colors duration-200 self-end bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-3 md:px-5"
               >
                 ► 배포사이트
               </Link>
@@ -126,7 +132,7 @@ const Project = () => {
         </div>
         <Link
           href="/project/moviefinder"
-          className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-base md:py-3 md:px-5"
+          className=" hover:bg-black/60 transition-colors duration-200 bg-black/70 w-fit text-white py-2 px-3 rounded-3xl text-xs md:text-sm md:py-3 md:px-5"
         >
           ► DETAIL
         </Link>
