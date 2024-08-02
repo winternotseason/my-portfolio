@@ -104,11 +104,6 @@ const Home = () => {
             프론트엔드 개발자 황서연입니다.
           </p>
           <p className="mt-2 md:mt-4">
-            학습하고 개발하는데에 있어서 프론트와 백의 구분을 두지 않고, 사용자
-            중심의 최적화와 혁신적인 개발을 통해 더 나은 사용자 경험을 제공하는
-            것이 제 목표입니다.
-          </p>
-          <p className="mt-2 md:mt-4">
             쉽지 않은 개발의 길에서 함께 나아가고 싶은 개발자가 될 수 있도록
             끊임없이 노력하겠습니다.
           </p>
@@ -128,8 +123,8 @@ const Home = () => {
             구조분해할당과 같은 ES6 문법을 잘 숙지하고 활용할 수 있습니다.
           </p>
           <p className="mb-1">
-            - Promise를 기반으로 동작하는 async/await 패턴을 효과적으로
-            활용하여 가독정 좋은 비동기 처리를 할 수 있습니다.
+            - Promise를 기반으로 동작하는 async/await 패턴을 효과적으로 활용하여
+            가독정 좋은 비동기 처리를 할 수 있습니다.
           </p>
           <p className="mb-2 md:mb-4">
             - REST API를 통한 HTTP 요청을 잘 이해하고 있으며, API 서버와
@@ -137,8 +132,8 @@ const Home = () => {
           </p>
           <p className="font-medium mb-2">· React, Next.JS</p>
           <p className="mb-1">
-            - useState, useEffect 등과 같은 Hook에 익숙하여 프로젝트에 활용할
-            수 있고, 다양한 라이브러리들을 적용할 수 있습니다.
+            - useState, useEffect 등과 같은 Hook에 익숙하여 프로젝트에 활용할 수
+            있고, 다양한 라이브러리들을 적용할 수 있습니다.
           </p>
           <p className="mb-2 md:mb-4">
             - Next.js API Routes를 활용하여 서버리스 환경에서 API 엔드포인트를
