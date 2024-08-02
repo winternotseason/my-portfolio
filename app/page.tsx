@@ -70,7 +70,7 @@ const Home = () => {
             🔍 ABOUT ME
           </h1>
           <p className="text-xs md:text-base">
-            <span className="font-medium">학력 · </span>인하대학교 경영학 /
+            <span className="font-medium">학력 · </span>인하대학교 졸업 경영학 /
             산업경영공학 (3.91 / 4.5)
           </p>
           <p className="text-xs md:text-base">
@@ -87,7 +87,7 @@ const Home = () => {
           </h1>
           <p className="text-xs md:text-base">
             <span className="font-medium">정보처리기사 최종합격 · </span> 실기
-            (23.10.07) · 필기 (23.07.22)
+            (23.11.15) · 필기 (23.07.22)
           </p>
           <p className="text-xs md:text-base">
             <span className="font-medium">토익스피킹 IM3 · </span>23.12.09
